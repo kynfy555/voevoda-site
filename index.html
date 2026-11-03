@@ -92,12 +92,19 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/113978304" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 
+  <!-- ========================================================================= -->
+  <!-- ВНИМАНИЕ: ДЛЯ МАКСИМАЛЬНОЙ СКОРОСТИ САЙТА БЕЗ "РЫВКОВ" ЗАГРУЗКИ         -->
+  <!-- 1. Сгенерируйте чистый CSS код на сайте play.tailwindcss.com            -->
+  <!-- 2. Удалите два скрипта <script> ниже (строки 100-117)                   -->
+  <!-- 3. Вставьте сгенерированный CSS код внутрь тега <style> ниже            -->
+  <!-- ========================================================================= -->
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
   <script>
     tailwind.config = {
       theme: {
@@ -123,6 +130,8 @@
   </script>
 
   <style>
+    /* Сюда нужно будет вставить сгенерированный CSS, когда удалите скрипты Tailwind выше */
+    
     .bg-hero-radial {
       background: radial-gradient(circle at 75% 30%, #355A4E 0%, #203E34 60%, #132A22 100%);
     }
@@ -259,7 +268,8 @@
             <div class="relative">
               <div class="absolute -inset-4 bg-gradient-to-tr from-white/15 via-gold/30 to-white/15 rounded-3xl blur-2xl opacity-90 pointer-events-none"></div>
               <div class="relative">
-                <img id="userCoverImg" src="cover.webp" width="750" height="1060" fetchpriority="high"  alt="Обложка книги «Собери себя заново», авторы Михаил и Андрей Воевода" class="relative z-10 w-full h-auto rounded-xl book-3d-shadow transform hover:scale-[1.02] transition duration-500">
+                <!-- ВНИМАНИЕ: ЗДЕСЬ ДОБАВЛЕНО ПЛАВНОЕ ПРОЯВЛЕНИЕ (opacity-0 и onload) -->
+                <img id="userCoverImg" src="cover.webp" width="750" height="1060" fetchpriority="high" alt="Обложка книги «Собери себя заново», авторы Михаил и Андрей Воевода" class="relative z-10 w-full h-auto rounded-xl book-3d-shadow transform hover:scale-[1.02] transition-opacity duration-700 opacity-0" onload="this.classList.remove('opacity-0')">
               </div>
             </div>
 
