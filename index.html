@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru" class="scroll-smooth">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F2EBZ2M60L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F2EBZ2M60L');
-</script>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2EBZ2M60L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F2EBZ2M60L');
+  </script>
+
   <title>Собери себя заново — Книга-откровение Михаила и Андрея Воеводы</title>
   <link rel="icon" href="favicon777.png" type="image/png">
   <link rel="apple-touch-icon" href="favicon777.png">
-  <meta name="description" content="Усталость — это блокировка. Откровение хирурга с 30-летним стажем: как снять внутренние спазмы, вернуть природную энергию и вкус к жизни без таблеток.">
+  <meta name="description" content="Усталость — это блокировка. Взгляд сосудистого хирурга с 30-летним стажем: как снять внутренние спазмы, вернуть природную энергию и вкус к жизни без таблеток.">
   
+  <!-- Предзагрузка главного изображения для ускорения первого экрана (LCP) -->
+  <link rel="preload" as="image" href="cover.png">
+
   <!-- SEO Оптимизация -->
-  <meta name="keywords" content="хроническая усталость, восстановление энергии, сосудистый хирург, восточные практики, здоровье, нейробиология, Михаил Воевода, Андрей Воевода, книга здоровье">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://avoevoda.com/">
   
-  <!-- Open Graph -->
-  <meta property="og:title" content="Собери себя заново — Книга-откровение">
+  <!-- Open Graph & Twitter Cards -->
+  <meta property="og:site_name" content="Собери себя заново — Михаил и Андрей Воевода">
+  <meta property="og:title" content="Собери себя заново — Книга-откровение Михаила и Андрея Воеводы">
   <meta property="og:description" content="Усталость — это не возраст, а блокировка. Узнайте, как снять внутренний спазм, вернуть энергию и вкус к жизни.">
   <meta property="og:type" content="book">
   <meta property="og:url" content="https://avoevoda.com/">
   <meta property="og:image" content="https://avoevoda.com/cover.png">
+  <meta property="og:image:width" content="750">
+  <meta property="og:image:height" content="1060">
   <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Собери себя заново — Книга-откровение">
+  <meta name="twitter:description" content="Как снять внутренний спазм, вернуть природную энергию и вкус к жизни. Система на стыке хирургии и практик Востока.">
+  <meta name="twitter:image" content="https://avoevoda.com/cover.png">
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -37,12 +46,24 @@
     "@context": "https://schema.org",
     "@type": "Book",
     "name": "Собери себя заново",
-    "author": [
-      {"@type": "Person", "name": "Михаил Воевода"},
-      {"@type": "Person", "name": "Андрей Воевода"}
-    ],
-    "description": "Откровение сосудистого хирурга с 30-летним стажем и мастера восточных практик о том, как снять внутренний спазм и вернуть энергию.",
+    "url": "https://avoevoda.com/",
+    "image": "https://avoevoda.com/cover.png",
+    "bookFormat": "https://schema.org/EBook",
+    "numberOfPages": 117,
     "inLanguage": "ru",
+    "description": "Система восстановления энергии и снятия внутренних зажимов от сосудистого хирурга с 30-летним стажем Михаила Воеводы и исследователя системного оздоровления Андрея Воеводы.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Михаил Воевода",
+        "jobTitle": "Сосудистый хирург, кандидат медицинских наук, доцент"
+      },
+      {
+        "@type": "Person",
+        "name": "Андрей Воевода",
+        "jobTitle": "Исследователь нейробиологии привычек и системного восстановления"
+      }
+    ],
     "offers": {
       "@type": "Offer",
       "price": "890",
@@ -54,7 +75,7 @@
   </script>
 
   <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
+  <script type="text/javascript">
      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
      m[i].l=1*new Date();
      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -141,21 +162,21 @@
   <!-- ВЕРХНЯЯ НАВИГАЦИЯ -->
   <nav class="sticky top-0 z-50 bg-[#132A22]/95 backdrop-blur-md border-b border-gold/30 shadow-lg">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-14 sm:h-18 py-2">
+      <div class="flex items-center justify-between h-14 sm:h-16 py-2">
         <a href="#" class="flex items-center gap-2.5">
           <div class="w-8 h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-base shrink-0">
             В
           </div>
           <div>
             <span class="block text-goldLight font-serif font-bold tracking-wider text-xs sm:text-base leading-none">СОБЕРИ СЕБЯ ЗАНОВО</span>
-            <span class="block text-[10px] text-emerald-100/75 mt-0.5">Книга-откровение М. и А. Воеводы</span>
+            <span class="block text-[10px] text-emerald-100/75 mt-0.5">Книга-система М. и А. Воеводы</span>
           </div>
         </a>
 
         <div class="hidden md:flex items-center gap-6 text-sm font-medium text-emerald-100/90">
           <a href="#paradox" class="hover:text-goldLight transition">Парадокс усталости</a>
           <a href="#surgeon" class="hover:text-goldLight transition">Откровение хирурга</a>
-          <a href="#mysteries" class="hover:text-goldLight transition">7 тайн книги</a>
+          <a href="#mysteries" class="hover:text-goldLight transition">7 открытий книги</a>
           <a href="#scenarios" class="hover:text-goldLight transition">Два сценария</a>
           <a href="#faq" class="hover:text-goldLight transition">Вопросы</a>
         </div>
@@ -177,9 +198,9 @@
         <div class="lg:col-span-7 text-left">
           
           <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/40 text-goldLight text-xs font-semibold mb-5">
-            <span>✦ Книга-откровение</span>
+            <span>✦ Книга-система</span>
             <span class="opacity-50">•</span>
-            <span>На стыке сосудистой хирургии, нейробиологии и тайных практик Востока</span>
+            <span>На стыке сосудистой хирургии, физиологии и восточных практик</span>
           </div>
 
           <h1 class="font-serif text-3xl sm:text-5xl font-bold leading-[1.14] text-white mb-4">
@@ -188,35 +209,35 @@
           </h1>
 
           <p class="text-sm sm:text-lg text-emerald-100/90 leading-relaxed mb-6">
-            <strong class="text-white font-semibold">Усталость и увядание — это не возраст. Это блокировка.</strong> До 80% вашей энергии уходит на скрытую внутреннюю оборону. Узнайте, как снять эту блокировку без изнуряющего спорта, диет и горстей таблеток.
+            <strong class="text-white font-semibold">Усталость и увядание — это не возраст. Это блокировка.</strong> Львиная доля ваших жизненных сил уходит на скрытую внутреннюю оборону и удержание хронического напряжения. Узнайте, как снять эту блокировку без изнуряющего спорта, жестких диет и горстей таблеток.
           </p>
 
           <div class="space-y-3 mb-7">
             <div class="bg-[#1A352B]/85 border border-emeraldAccent/80 rounded-xl p-3.5 flex items-start gap-3.5 shadow-sm">
               <span class="w-7 h-7 rounded-lg bg-gold/20 border border-gold/40 text-goldLight font-serif font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">I</span>
               <p class="text-xs sm:text-sm text-emerald-50 leading-relaxed">
-                <strong class="text-goldLight">«Мы лечим не то, что болит»:</strong> почему бесполезно глушить усталость кофе, пить горстями витамины и мазать ноющую спину, когда настоящая причина упадка сил — в глухих мышечных зажимах, спазме сосудов и перегрузке внутренних органов от скрытого стресса.
+                <strong class="text-goldLight">«Мы лечим не то, что болит»:</strong> почему бесполезно глушить усталость кофе, пить наугад витамины и мазать ноющую спину, когда настоящая причина упадка сил — в глубоких мышечных зажимах, спазме сосудов и перегрузке внутренних органов от скрытого стресса.
               </p>
             </div>
 
             <div class="bg-[#1A352B]/85 border border-emeraldAccent/80 rounded-xl p-3.5 flex items-start gap-3.5 shadow-sm">
               <span class="w-7 h-7 rounded-lg bg-gold/20 border border-gold/40 text-goldLight font-serif font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">II</span>
               <p class="text-xs sm:text-sm text-emerald-50 leading-relaxed">
-                <strong class="text-goldLight">Биохимия обычной тарелки и тишина ума:</strong> как простое изменение очередности блюд за обедом и 30 секунд перед сном меняют гормональный фон, работу сердца и глубину сна.
+                <strong class="text-goldLight">Физиология обычной тарелки и тишина ума:</strong> как простое изменение очередности блюд за обедом и короткие дыхательные протоколы перед сном меняют уровень бодрости, работу сосудов и глубину ночного восстановления.
               </p>
             </div>
 
             <div class="bg-[#1A352B]/85 border border-emeraldAccent/80 rounded-xl p-3.5 flex items-start gap-3.5 shadow-sm">
               <span class="w-7 h-7 rounded-lg bg-gold/20 border border-gold/40 text-goldLight font-serif font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">III</span>
               <p class="text-xs sm:text-sm text-emerald-50 leading-relaxed">
-                <strong class="text-goldLight">Энергия, которую фиксируют приборы:</strong> как за 5–15 минут в день распечатать запертые резервы тела и перевести нервную систему из режима «выживания» в состояние созидания.
+                <strong class="text-goldLight">Возвращение природного ресурса:</strong> как за 5–15 минут в день мягко снять телесную скованность и перевести нервную систему из режима хронического «выживания» в состояние спокойной силы.
               </p>
             </div>
           </div>
 
           <div class="bg-[#132A22]/70 border-l-4 border-gold p-3.5 sm:p-4 rounded-r-xl mb-7 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
             <p><strong class="text-goldLight">Михаил Воевода</strong> — к.м.н., доцент кафедры хирургии, сосудистый хирург (30 лет у операционного стола), прямой ученик Гранд Мастера кунг-фу Ли Хонг Тая.</p>
-            <p class="mt-1"><strong class="text-goldLight">Андрей Воевода</strong> — исследователь скрытых ресурсов организма, нейробиологии привычек и системного восстановления.</p>
+            <p class="mt-1"><strong class="text-goldLight">Андрей Воевода</strong> — соавтор системы, исследователь нейробиологии привычек, дыхательных практик и системного восстановления организма.</p>
           </div>
 
           <div class="hidden lg:inline-flex flex-col items-center">
@@ -227,7 +248,7 @@
               </svg>
             </a>
             <p class="text-xs text-emerald-200/85 mt-2 text-center whitespace-nowrap">
-              PDF-формат (117 стр.) • Мгновенный доступ
+              PDF-формат (117 стр.) • Мгновенный доступ после оплаты
             </p>
           </div>
         </div>
@@ -236,10 +257,9 @@
           <div class="w-full max-w-[340px] sm:max-w-[375px]">
             
             <div class="relative">
-              <!-- Усиленное мягкое белое/золотое гало сзади для максимальной выразительности обложки -->
               <div class="absolute -inset-4 bg-gradient-to-tr from-white/15 via-gold/30 to-white/15 rounded-3xl blur-2xl opacity-90 pointer-events-none"></div>
               <div class="relative">
-                <img id="userCoverImg" src="cover.png" alt="Обложка книги Собери себя заново" loading="lazy" class="relative z-10 w-full h-auto rounded-xl book-3d-shadow transform hover:scale-[1.02] transition duration-500">
+                <img id="userCoverImg" src="cover.png" width="750" height="1060" fetchpriority="high" decoding="async" alt="Обложка книги «Собери себя заново», авторы Михаил и Андрей Воевода" class="relative z-10 w-full h-auto rounded-xl book-3d-shadow transform hover:scale-[1.02] transition duration-500">
               </div>
             </div>
 
@@ -250,7 +270,7 @@
               </div>
               <div class="bg-[#224438]/95 text-emerald-50 px-4 py-3 rounded-xl border border-gold/40 shadow-md flex items-center gap-3 text-xs sm:text-sm">
                 <span class="text-goldLight font-bold shrink-0">✔</span>
-                <span><strong>30 лет врачебного опыта</strong> и 12 лет личной проверки каждого шага авторами</span>
+                <span><strong>30 лет врачебного опыта</strong> и 12 лет личной практики авторов</span>
               </div>
             </div>
 
@@ -272,7 +292,7 @@
   </header>
 
   <!-- 2. ПАРАДОКС «УКРАДЕННОЙ ЭНЕРГИИ» -->
-  <section id="paradox" class="py-14 sm:py-22 bg-parchment border-b border-slate-200">
+  <section id="paradox" class="py-14 sm:py-20 bg-parchment border-b border-slate-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-3xl mx-auto mb-10">
@@ -289,10 +309,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           <div class="lg:col-span-7 space-y-4">
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-emeraldDeep">
-              Ваша клеточная энергия не исчезла. Она арестована вашим собственным мозгом.
+              Ваша природная энергия не исчезла. Она заблокирована защитными реакциями нервной системы.
             </h3>
             <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
-              Наше тело не умеет отличать реальную физическую угрозу от вашей тревожной мысли, финансового дедлайна или проглоченной обиды. В ответ на фоновый стресс мозг переводит организм в режим <strong>«скрытой осады»</strong>:
+              Наше тело не умеет отличать реальную физическую угрозу от вашей тревожной мысли, финансового дедлайна или невысказанной обиды. В ответ на фоновый стресс мозг переводит организм в режим <strong>«скрытой осады»</strong>:
             </p>
             <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700">
               <li class="flex items-start gap-2.5">
@@ -301,22 +321,22 @@
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-goldDark font-bold mt-0.5">▪</span>
-                <span><strong>Сосудистый спазм и стянутость фасций:</strong> под действием гормонов стресса мельчайшие сосуды сужаются, ткани недополучают кислород, а внутренние органы начинают буквально «задыхаться» в застое.</span>
+                <span><strong>Сосудистый спазм и стянутость фасций:</strong> под действием гормонов стресса периферические сосуды сужаются, ухудшается микроциркуляция, а ткани недополучают питание и кислород.</span>
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-goldDark font-bold mt-0.5">▪</span>
-                <span><strong>Круглосуточная утечка топлива:</strong> драгоценные ресурсы вашей энергии тратятся не на радость, творчество и иммунитет, а на обслуживание этого невидимого внутреннего напряжения.</span>
+                <span><strong>Круглосуточная утечка топлива:</strong> колоссальный ресурс организма тратится не на радость, активность и восстановление, а на непрерывное обслуживание этого фонового мышечного и сосудистого тонуса.</span>
               </li>
             </ul>
           </div>
 
           <div class="lg:col-span-5 bg-[#1A352B] text-white p-6 rounded-2xl border border-gold/40 shadow-lg">
-            <p class="text-xs font-bold uppercase tracking-wider text-goldLight mb-4">Куда уходит 100% сил в режиме «автопилота»:</p>
+            <p class="text-xs font-bold uppercase tracking-wider text-goldLight mb-4">Как распределяется ваш ресурс в режиме хронического стресса (по ощущениям тела):</p>
             
             <div class="mb-5">
               <div class="flex justify-between text-xs font-semibold mb-1.5">
-                <span class="text-red-300">На удержание спазмов, тревоги и зажимов</span>
-                <span class="text-red-300 font-bold">~80% энергии</span>
+                <span class="text-red-300">Удержание спазмов, тревоги и зажимов</span>
+                <span class="text-red-300 font-bold">до 80% сил</span>
               </div>
               <div class="w-full h-3.5 bg-black/20 rounded-full overflow-hidden">
                 <div class="h-full bg-gradient-to-r from-red-500 to-amber-500 w-4/5 rounded-full"></div>
@@ -325,8 +345,8 @@
 
             <div class="mb-6">
               <div class="flex justify-between text-xs font-semibold mb-1.5">
-                <span class="text-emerald-200">Остаётся на вашу жизнь, семью и здоровье</span>
-                <span class="text-emerald-200 font-bold">всего ~20%</span>
+                <span class="text-emerald-200">Остаётся на жизнь, семью и созидание</span>
+                <span class="text-emerald-200 font-bold">около 20%</span>
               </div>
               <div class="w-full h-3.5 bg-black/20 rounded-full overflow-hidden">
                 <div class="h-full bg-emerald-400 w-1/5 rounded-full"></div>
@@ -334,8 +354,8 @@
             </div>
 
             <div class="p-3.5 rounded-xl bg-[#24473B] border border-gold/30 text-xs text-emerald-50 leading-relaxed">
-              <strong class="text-goldLight block mb-1">Именно поэтому стимуляторы опасны:</strong>
-              Попытка взбодрить заблокированное тело кофеином, энергетиками или тяжелым бегом — это удар хлыстом по загнанной лошади. Чтобы вернуть силу, нужно не давить на газ, а <strong>знать, где в теле находится ручной тормоз и как мягко его отпустить</strong>.
+              <strong class="text-goldLight block mb-1">Почему стимуляторы только усугубляют спад:</strong>
+              Попытка взбодрить зажатое тело кофеином, энергетиками или работой на износ — это удар хлыстом по загнанной лошади. Чтобы вернуть силу, нужно не давить на газ, а <strong>знать, где в теле находится ручной тормоз и как мягко его отпустить</strong>.
             </div>
           </div>
         </div>
@@ -344,7 +364,7 @@
       <div class="bg-ivory rounded-3xl p-6 sm:p-8 border-2 border-emeraldAccent/25 shadow-sm">
         <div class="text-center max-w-2xl mx-auto mb-6">
           <h3 class="font-serif text-xl sm:text-2xl font-bold text-emeraldDeep">
-            Проверьте себя: откликаются ли у вас эти симптомы скрытой блокировки?
+            Проверьте себя: откликаются ли у вас эти сигналы скрытого перенапряжения?
           </h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-1">Отметьте состояния, которые вы замечали у себя за последний месяц:</p>
         </div>
@@ -373,9 +393,9 @@
 
         <div class="bg-[#1D3B30] text-white p-5 rounded-2xl border border-gold/40 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-md">
           <div>
-            <p class="text-goldLight text-xs font-bold uppercase tracking-wider" id="symptomCounterText">Диагностика состояния</p>
+            <p class="text-goldLight text-xs font-bold uppercase tracking-wider" id="symptomCounterText">Самопроверка состояния</p>
             <p class="text-xs sm:text-sm text-emerald-50 mt-1 leading-relaxed" id="symptomVerdictDesc">
-              Отметьте хотя бы один пункт выше — и вы увидите, почему обычные советы «больше отдыхать» не работают.
+              Отметьте хотя бы один пункт выше — и вы увидите, почему обычные советы «просто выспаться» не дают результата.
             </p>
           </div>
           <a href="#mysteries" class="shrink-0 bg-gold/20 hover:bg-gold hover:text-emeraldDeep text-goldLight border border-gold/50 font-bold text-xs px-4 py-2.5 rounded-xl transition">
@@ -388,7 +408,7 @@
   </section>
 
   <!-- 3. ИСПОВЕДЬ У ОПЕРАЦИОННОГО СТОЛА -->
-  <section id="surgeon" class="py-14 sm:py-22 bg-forest-deep text-white border-b-4 border-gold relative overflow-hidden">
+  <section id="surgeon" class="py-14 sm:py-20 bg-forest-deep text-white border-b-4 border-gold relative overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -403,48 +423,48 @@
           
           <div class="space-y-3.5 text-xs sm:text-base text-emerald-100/90 leading-relaxed font-serif italic bg-[#132A22]/80 p-5 sm:p-6 rounded-2xl border-l-4 border-gold shadow-md">
             <p>
-              «Когда стоишь у операционного стола три десятилетия, видишь человеческий организм без прикрас. Видишь, как спазмируются и теряют эластичность сосуды, как задыхаются от застоя внутренние органы, как гаснет жизненная сила даже у совсем не старых людей.
+              «Когда стоишь у операционного стола три десятилетия, видишь человеческий организм без прикрас. Видишь, как спазмируются и теряют эластичность сосуды, как страдают от застоя ткани и органы, как гаснет жизненная сила даже у совсем не старых людей.
             </p>
             <p>
-              Но самое главное открытие пришло со временем: <strong class="text-goldLight not-italic">здоровье человека не начинается в операционной и не заканчивается рецептом на таблетки</strong>. Таблетка утром и капли вечером лишь приглушают аварийную лампочку на приборной панели, пока продолжает тлеть корень проблемы.
+              Но самое главное открытие пришло со временем: <strong class="text-goldLight not-italic">здоровье человека не начинается в операционной и не заканчивается рецептом на таблетки</strong>. Таблетка утром и капли вечером часто лишь приглушают сигнальную лампочку на приборной панели, пока образ жизни и внутренний спазм продолжают подпитывать корень проблемы.
             </p>
             <p>
-              Мы лечим следствия по отдельности — отдельно шею, отдельно желудок, отдельно давление, отдельно бессонницу. Но человек — это единая живая система, где одна тревожная мысль мгновенно меняет биохимию крови и тонус сосудов».
+              Мы привыкли разбирать следствия по отдельности — отдельно шею, отдельно пищеварение, отдельно тонус сосудов, отдельно бессонницу. Но человек — это единая живая система, где хроническая тревога мгновенно отражается на дыхании, биохимии крови и тонусе сосудистой стенки».
             </p>
           </div>
 
           <p class="text-xs sm:text-sm text-emerald-100/85 leading-relaxed">
-            Именно поэтому кандидат медицинских наук, доцент <strong>Михаил Воевода</strong> отправился искать недостающее звено за пределы больничных стен — став прямым учеником <strong>Гранд Мастера кунг-фу Ли Хонг Тая</strong>. А вместе с исследователем нейробиологии и системного восстановления <strong>Андреем Воеводой</strong> они более <strong>12 лет исследовали, тестировали и отбирали на собственном опыте</strong> стык западной физиологии и закрытых восточных практик, оставляя лишь то, что действительно возвращает телу ресурс и дает устойчивый физиологический результат.
+            Именно поэтому кандидат медицинских наук, доцент кафедры хирургии <strong>Михаил Воевода</strong> объединил академические знания сосудистой физиологии с многолетним опытом обучения у <strong>Гранд Мастера традиционного ушу и цигун Ли Хонг Тая</strong>. Вместе с соавтором и исследователем системного оздоровления <strong>Андреем Воеводой</strong> они более <strong>12 лет проверяли и выстраивали на собственном опыте</strong> целостную методику на стыке западной физиологии и восточной культуры движения, дыхания и внимания.
           </p>
         </div>
 
         <div class="lg:col-span-5">
           <div class="bg-[#1A352B]/95 border border-gold/40 rounded-3xl p-6 sm:p-7 shadow-2xl space-y-5">
             <h3 class="font-serif text-xl font-bold text-goldLight border-b border-gold/25 pb-3">
-              Чем эта книга принципиально отличается от всего, что вы читали раньше:
+              Чем эта книга принципиально отличается от разрозненных советов из интернета:
             </h3>
 
             <div class="flex items-start gap-3.5">
               <div class="w-8 h-8 rounded-lg bg-gold/20 border border-gold/40 flex items-center justify-center text-goldLight font-bold text-sm shrink-0">1</div>
               <div>
-                <h4 class="font-bold text-white text-sm">Хирургическая точность и системный расчет</h4>
-                <p class="text-xs text-emerald-100/80 mt-1 leading-relaxed">Никакой сомнительной эзотерики или изнуряющих нагрузок. Каждое движение, дыхательный цикл и пищевая привычка выверены с точки зрения анатомии сосудов, позвоночника и гормонов.</p>
+                <h4 class="font-bold text-white text-sm">Врачебная логика и бережный подход</h4>
+                <p class="text-xs text-emerald-100/80 mt-1 leading-relaxed">Никаких экстремальных нагрузок или сомнительных экспериментов. Каждое движение, дыхательный цикл и пищевая привычка объяснены с точки зрения анатомии сосудов, биомеханики позвоночника и физиологии нервной системы.</p>
               </div>
             </div>
 
             <div class="flex items-start gap-3.5">
               <div class="w-8 h-8 rounded-lg bg-gold/20 border border-gold/40 flex items-center justify-center text-goldLight font-bold text-sm shrink-0">2</div>
               <div>
-                <h4 class="font-bold text-white text-sm">Прямая передача от Гранд Мастера</h4>
-                <p class="text-xs text-emerald-100/80 mt-1 leading-relaxed">В книгу вошли тонкие биомеханические и энергетические нюансы восточной школы, которые невозможно найти в открытых роликах в интернете — там часто показывают лишь внешнюю форму, теряя внутренний ключ.</p>
+                <h4 class="font-bold text-white text-sm">Прямая передача традиции от Мастера</h4>
+                <p class="text-xs text-emerald-100/80 mt-1 leading-relaxed">В книгу вошли тонкие биомеханические и дыхательные нюансы восточной школы, которые редко объясняют в открытых видеороликах, где часто копируют лишь внешнюю форму движения без понимания внутренней работы тела.</p>
               </div>
             </div>
 
             <div class="flex items-start gap-3.5">
               <div class="w-8 h-8 rounded-lg bg-gold/20 border border-gold/40 flex items-center justify-center text-goldLight font-bold text-sm shrink-0">3</div>
               <div>
-                <h4 class="font-bold text-white text-sm">Вся жизнь под одной обложкой</h4>
-                <p class="text-xs text-emerald-100/80 mt-1 leading-relaxed">Она соединяет в один пазл работу с подсознанием, культуру питания и питьевого режима, здоровье печени и сердца, чистоту сосудов мозга, дыхание и более 30 практических инструментов с пошаговыми фотоинструкциями: от утренней гимнастики до работы с состоянием.</p>
+                <h4 class="font-bold text-white text-sm">Вся система под одной обложкой</h4>
+                <p class="text-xs text-emerald-100/80 mt-1 leading-relaxed">Книга соединяет в единый пазл управление вниманием и стрессом, культуру питания и питьевого режима, заботу о сосудах и пищеварении, дыхание и более 30 практических упражнений с пошаговыми иллюстрациями.</p>
               </div>
             </div>
 
@@ -461,8 +481,8 @@
     </div>
   </section>
 
-<!-- 4. ГЛАВНЫЙ МАГНИТ ЛЮБОПЫТСТВА: «7 ЗАКРЫТЫХ ОТКРЫТИЙ И ТАЙН КНИГИ» -->
-  <section id="mysteries" class="py-14 sm:py-22 bg-ivory border-b border-slate-200">
+  <!-- 4. ГЛАВНЫЙ МАГНИТ ЛЮБОПЫТСТВА: «7 ОТКРЫТИЙ И ТЕМ КНИГИ» -->
+  <section id="mysteries" class="py-14 sm:py-20 bg-ivory border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -478,18 +498,18 @@
         <div class="mystery-card bg-white rounded-2xl p-6 border-2 border-slate-200/90 hover:border-gold shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тайна №1 • Органы-мишени</span>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тема №1 • Органы-мишени</span>
               <span class="text-goldDark font-serif font-bold text-lg">01</span>
             </div>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-emeraldDeep mb-2.5">
-              Загадка женской печени и мужских почек
+              Как стресс выбирает уязвимые точки в женском и мужском организме
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              Почему хронический стресс бьет у мужчин и женщин по совершенно разным органам? Вы узнаете, почему спазм одного микроскопического клапана блокирует отток желчи, и почему без его расслабления любые «чистки» организма бесполезны.
+              Почему длительное эмоциональное напряжение по-разному отражается на самочувствии мужчин и женщин? Вы узнаете, как спазм гладкой мускулатуры и крошечного сфинктера нарушает нормальный отток желчи, и почему без снятия этого зажима любые диеты работают вполсилы.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-goldDark flex items-center gap-1.5">
-            <span>✦ Внутри книги: 8 шагов мягкого запуска главного фильтра долголетия</span>
+            <span>✦ Внутри книги: 8 шагов бережной поддержки главного фильтра организма</span>
           </div>
         </div>
 
@@ -497,18 +517,18 @@
         <div class="mystery-card bg-white rounded-2xl p-6 border-2 border-slate-200/90 hover:border-gold shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тайна №2 • Парадокс кислорода</span>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тема №2 • Парадокс кислорода</span>
               <span class="text-goldDark font-serif font-bold text-lg">02</span>
             </div>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-emeraldDeep mb-2.5">
-              Почему хаотичное дыхание при стрессе буквально душит ваш мозг
+              Почему частое поверхностное дыхание при стрессе обедняет мозг кислородом
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              Когда в момент тревоги мы начинаем панически и часто дышать, срабатывает опасный физиологический сбой: мы буквально «выдуваем» из организма углекислый газ. Без этого ключевого газа сосуды мозга мгновенно спазмируются, а эритроциты перестают отдавать кислород тканям.
+              Когда в момент тревоги мы начинаем часто и поверхностно дышать, срабатывает физиологический эффект Вериго — Бора: мы избыточно вымываем углекислый газ. Без его нормального уровня сосуды мозга рефлекторно сужаются, а гемоглобин хуже отдает кислород клеткам.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-goldDark flex items-center gap-1.5">
-            <span>✦ Внутри книги: формула дыхания, мгновенно расширяющая капилляры</span>
+            <span>✦ Внутри книги: физиологичный ритм дыхания для снятия сосудистого спазма</span>
           </div>
         </div>
 
@@ -516,18 +536,18 @@
         <div class="mystery-card bg-white rounded-2xl p-6 border-2 border-slate-200/90 hover:border-gold shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тайна №3 • Биоэлектричество</span>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тема №3 • Фасции и тонус</span>
               <span class="text-goldDark font-serif font-bold text-lg">03</span>
             </div>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-emeraldDeep mb-2.5">
-              Живой «оптоволоконный кабель» внутри вашего тела
+              Единая соединительнотканная сеть внутри вашего тела
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              То, что древние мастера называли «энергетическими каналами», современная наука открыла как фасциальную сеть, вырабатывающую реальный пьезоэлектрический ток для питания клеток. Но от стресса эта сеть «высыхает», внутренний ток падает, и зажатое тело стягивает нас, как тесный скафандр.
+              То, что восточные мастера веками описывали как «меридианы», во многом перекликается с современной анатомией миофасциальных цепей. От гиподинамии и стресса фасции теряют эластичность и скольжение, буквально стягивая тело, словно тесный скафандр.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-goldDark flex items-center gap-1.5">
-            <span>✦ Внутри книги: 3-минутный вибрационный ключ для снятия глубоких блоков.</span>
+            <span>✦ Внутри книги: 3-минутная техника микродвижений для освобождения зажимов</span>
           </div>
         </div>
 
@@ -535,18 +555,18 @@
         <div class="mystery-card bg-white rounded-2xl p-6 border-2 border-slate-200/90 hover:border-gold shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тайна №4 • Код трапезы</span>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тема №4 • Код трапезы</span>
               <span class="text-goldDark font-serif font-bold text-lg">04</span>
             </div>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-emeraldDeep mb-2.5">
-              Секрет одной и той же тарелки: как есть без скачков сахара и сонливости
+              Секрет одной и той же тарелки: как есть без резкой сонливости после обеда
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              Два человека могут съесть абсолютно одинаковый обед, но первый почувствует вялость и упадок сил, а второй — чистый прилив энергии. Всё дело в подходе к выбору продуктов, их приготовлению и последовательности.
+              Два человека могут съесть одинаковый обед, но первый почувствует вялость и тяжесть, а второй — ровный прилив сил. Огромную роль играет не только состав блюд, но и температура воды, спокойное состояние перед едой и правильная последовательность продуктов.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-goldDark flex items-center gap-1.5">
-            <span>✦ Внутри книги: законы питания по биоритмам и забота о «втором мозге»</span>
+            <span>✦ Внутри книги: принципы питания по биоритмам и поддержка микробиома</span>
           </div>
         </div>
 
@@ -554,18 +574,18 @@
         <div class="mystery-card bg-white rounded-2xl p-6 border-2 border-slate-200/90 hover:border-gold shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тайна №5 • Сердце и Молодость</span>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тема №5 • Сосуды и тонус лица</span>
               <span class="text-goldDark font-serif font-bold text-lg">05</span>
             </div>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-emeraldDeep mb-2.5">
-              Природный комплекс для сердца и техника омоложения лица
+              Питательная поддержка сердца и освобождение мышц шеи и лица
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              Как поддержать сердечную мышцу простыми средствами? Домашний питательный комплекс без аптечной «химии». А также глубокая техника работы с мышцами шеи и лица, которая снимает зажимы у основания черепа и восстанавливает естественный тонус лица.
+              Как поддержать сердечно-сосудистую систему простыми натуральными продуктами в рационе? А также как с помощью мягкой саморегуляции снять хронические зажимы у основания черепа и шеи, возвращая лицу свежий вид и естественный тонус.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-goldDark flex items-center gap-1.5">
-            <span>✦ Инструкция внутри книги: точные пропорции рецепта и пошаговая техника.</span>
+            <span>✦ Внутри книги: подробный домашний рецепт и пошаговая фотоинструкция</span>
           </div>
         </div>
 
@@ -573,41 +593,41 @@
         <div class="mystery-card bg-white rounded-2xl p-6 border-2 border-slate-200/90 hover:border-gold shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тайна №6 • Подсознание</span>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-emeraldAccent bg-emerald-50 px-2.5 py-1 rounded-md">Тема №6 • Нейрофизиология покоя</span>
               <span class="text-goldDark font-serif font-bold text-lg">06</span>
             </div>
             <h3 class="font-serif text-lg sm:text-xl font-bold text-emeraldDeep mb-2.5">
-              Как за 30 секунд отключить тревожные мысли без медитаций
+              Как быстро переключить тревожный поток мыслей перед сном
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              Уговоры себя «не волноваться» бесполезны, пока ваш мозг заперт в бета-ритме защитного контроля. Но существует короткий нейрофизиологический протокол, который за считанные секунды переводит нервную систему в альфа-ритм.
+              Попытки заставить себя «не думать» редко помогают, пока нервная система взвинчена дневной гонкой. Но через направленное внимание, расслабление мелких мышц лица и дыхание можно мягко активировать парасимпатическую систему, отвечающую за покой и сон.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-goldDark flex items-center gap-1.5">
-            <span>✦ Внутри книги: техника управления вниманием и вечерняя перезагрузка.</span>
+            <span>✦ Внутри книги: короткий протокол переключения внимания и вечерней перезагрузки</span>
           </div>
         </div>
 
       </div>
 
-      <!-- Тайна №7 (Финоминальный широкий блок под сеткой) -->
+      <!-- Тайна №7 (Широкий блок под сеткой) -->
       <div class="bg-[#1A352B] text-white rounded-3xl p-6 sm:p-8 border-2 border-gold/50 shadow-xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           <div class="lg:col-span-8">
             <span class="inline-block text-xs font-bold uppercase tracking-widest text-goldLight bg-gold/15 border border-gold/30 px-3 py-1 rounded-md mb-2">
-              Тайна №7 • Биофизика невидимого и Закон зеркала в семье
+              Тема №7 • Эмоциональный резонанс и «Закон зеркала» в семье
             </span>
             <h3 class="font-serif text-xl sm:text-2xl font-bold text-white mb-2">
-              Язык биополя: почему дети пропускают ваши слова, но при этом безошибочно считывают ваше состояние
+              Невидимая связь: почему дети пропускают ваши слова мимо ушей, но безошибочно считывают ваше внутреннее состояние
             </h3>
             <p class="text-emerald-100/90 text-xs sm:text-sm leading-relaxed">
-              Научно доказанный факт: сердце человека создает мощнейшее тороидальное электромагнитное поле, радиус которого достигает нескольких метров. Когда вы охвачены стрессом, это поле становится хаотичным — и дети через систему зеркальных нейронов мгновенно считывают его, отвечая капризами и тревожностью. В книге раскрыты practices восстановления внутреннего баланса: вечерний ритуал очищения биополя, секреты чайного созерцания и 4 ключа общения с ребенком от рождения до 18 лет.
+              Авторы делятся удивительным наблюдением на стыке психофизиологии и восточной традиции: когда родители находятся в хроническом напряжении, дети через систему зеркальных нейронов, мимику и тембр голоса мгновенно считывают эту тревогу, отвечая капризами и беспокойством. В книге раскрыты <strong>практики</strong> восстановления семейного и личного баланса: вечерний ритуал сброса накопленного за день напряжения, культура чайного созерцания и 4 ключа к теплому общению с ребенком от рождения до 18 лет.
             </p>
           </div>
           <div class="lg:col-span-4 text-center lg:text-right">
             <div class="inline-flex flex-col items-center">
               <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="w-full sm:w-auto gold-gradient-btn font-extrabold text-sm sm:text-base px-7 py-4 rounded-xl uppercase tracking-wider inline-flex items-center justify-center gap-2">
-                <span>Открыть все тайны книги</span>
+                <span>Открыть все главы книги</span>
                 <span>→</span>
               </a>
               <p class="text-[11px] text-emerald-200/75 mt-2 text-center whitespace-nowrap">
@@ -622,7 +642,7 @@
   </section>
 
   <!-- 5. ИНТЕРАКТИВНЫЙ ПЕРЕКЛЮЧАТЕЛЬ «ДВА СЦЕНАРИЯ ВАШЕГО ДНЯ» -->
-  <section id="scenarios" class="py-14 sm:py-22 bg-parchment border-b border-slate-200">
+  <section id="scenarios" class="py-14 sm:py-20 bg-parchment border-b border-slate-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-3xl mx-auto mb-8">
@@ -638,10 +658,10 @@
       <div class="flex justify-center mb-8">
         <div class="inline-flex bg-white p-1.5 rounded-2xl border border-slate-200 shadow-sm">
           <button id="btnScenarioA" onclick="switchScenario('A')" class="px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-red-900 text-white shadow">
-            ✕ День «на автопилоте» (До книги)
+            ✕ День «на автопилоте» (Без системы)
           </button>
           <button id="btnScenarioB" onclick="switchScenario('B')" class="px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-emeraldDeep hover:bg-emerald-50">
-            ✔ День на пике формы (С системой)
+            ✔ День в ресурсе (С системой книги)
           </button>
         </div>
       </div>
@@ -652,14 +672,14 @@
           <span class="text-[11px] font-bold uppercase text-red-700">07:30 • Тяжелое утро</span>
           <h4 class="font-serif text-lg font-bold text-slate-900 mt-1">Резкий подъём и скованность в теле</h4>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Будильник вырывает из поверхностного сна. Рука по привычке сразу тянется к смартфону и новостям — в ту же секунду подскакивает кортизол, шея и поясница ноют от ночного зажима, а в голове туман, который не разогнать даже большой чашкой крепкого кофе.
+            Будильник вырывает из поверхностного сна. Рука по привычке сразу тянется к смартфону и новостям — в ту же секунду подскакивает уровень стресса, шея и поясница ноют от ночного зажима, а в голове туман, который не разогнать даже большой чашкой крепкого кофе.
           </p>
         </div>
         <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-red-400 shadow-sm">
-          <span class="text-[11px] font-bold uppercase text-red-700">13:30 • Послеобеденный нокаут</span>
+          <span class="text-[11px] font-bold uppercase text-red-700">13:30 • Послеобеденный спад</span>
           <h4 class="font-serif text-lg font-bold text-slate-900 mt-1">Еда на ходу и «туман» в голове</h4>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Еда перед монитором и «выключение» мозга. Быстрый обед вприкуску с рабочими чатами и фоновым стрессом. Вместо обещанного прилива сил — тяжелый свинцовый занавес уже через 30 минут: веки слипаются, мысли путаются, а перед монитором хочется просто закрыть глаза. Вы пытаетесь заставить себя работать, но мозг отказывается соображать.
+            Быстрый обед перед монитором вприкуску с рабочими чатами и фоновым напряжением. Вместо прилива сил — тяжелая сонливость уже через 30 минут: веки слипаются, концентрация падает, а остаток рабочего дня проходит на чистом усилии воли.
           </p>
         </div>
       </div>
@@ -667,17 +687,17 @@
       <!-- Панель Сценария Б -->
       <div id="panelScenarioB" class="grid grid-cols-1 sm:grid-cols-2 gap-4 hidden">
         <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-emerald-500 shadow-sm">
-          <span class="text-[11px] font-bold uppercase text-emerald-700">07:30 • Умное пробуждение</span>
-          <h4 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Легкое тело и ясная голова без утренней тяжести</h4>
+          <span class="text-[11px] font-bold uppercase text-emerald-700">07:30 • Мягкое пробуждение</span>
+          <h4 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Легкое тело и ясная голова с первых минут</h4>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Никакой ломоты в суставах и утреннего «тумана». Всего 5 минут правильной активации тела до подъема с кровати возвращают природную гибкость и абсолютную свежесть мысли.
+            Никакой резкой спешки и утреннего «тумана». Всего 5 минут мягкой сосудистой и суставной активации до подъема с кровати запускают кровообращение, возвращают телу гибкость и дарят спокойную ясность мысли.
           </p>
         </div>
         <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-emerald-500 shadow-sm">
           <span class="text-[11px] font-bold uppercase text-emerald-700">13:30 • Второе дыхание без стимуляторов</span>
-          <h4 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Ясный ум и бодрое состояние, когда у остальных иссякает заряд</h4>
+          <h4 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Ровная бодрость и чистая концентрация до вечера</h4>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Послеобеденный спад больше не властен над вами. Вместо того чтобы бороться со сном и терять продуктивность, вы используете практические инструменты из книги — и сохраняете концентрацию и бодрость, пока окружающие тратят остатки сил на выживание до вечера.
+            Послеобеденная вялость больше не выбивает вас из колеи. Благодаря простым правилам трапезы и короткой дыхательной разгрузке вы сохраняете легкость, ясный ум и хорошее настроение для себя и близких.
           </p>
         </div>
       </div>
@@ -689,32 +709,32 @@
   <section class="py-14 sm:py-20 bg-ivory border-b border-slate-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       
-      <!-- Сравнение ценности (без цен) -->
+      <!-- Сравнение ценности -->
       <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-gold/50 shadow-md mb-14">
         <div class="text-center max-w-2xl mx-auto mb-8">
-          <span class="text-xs font-bold uppercase tracking-widest text-goldDark">Разумная инвестиция в себя</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-goldDark">Разумный вклад в своё самочувствие</span>
           <h2 class="font-serif text-2xl sm:text-3xl font-bold text-emeraldDeep mt-2">
-            Одна настольная книга вместо бесконечного поиска временных решений.
+            Одна настольная книга-система вместо бесконечного поиска временных решений
           </h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
           <div class="bg-ivory p-5 rounded-2xl border border-slate-200">
-            <p class="font-bold text-slate-400 uppercase text-[11px]">Поход в аптеку / БАДы наугад</p>
-            <p class="text-lg font-bold text-slate-700 mt-1">Бесконечный слив бюджета</p>
-            <p class="text-slate-600 mt-2 leading-relaxed">Горсти витаминов и таблеток дают лишь иллюзию заботы о здоровье. Симптомы уходят на пару дней, но корень проблемы остается — потому что организм не учится помогать себе самостоятельно.</p>
+            <p class="font-bold text-slate-400 uppercase text-[11px]">Стимуляторы и добавки наугад</p>
+            <p class="text-lg font-bold text-slate-700 mt-1">Временная маскировка</p>
+            <p class="text-slate-600 mt-2 leading-relaxed">Бессистемный прием добавок без налаженного сна, дыхания и снятия мышечных зажимов дает лишь кратковременный эффект, не обучая организм саморегуляции.</p>
           </div>
 
           <div class="bg-ivory p-5 rounded-2xl border border-slate-200">
-            <p class="font-bold text-slate-400 uppercase text-[11px]">Один сеанс массажа спины</p>
-            <p class="text-lg font-bold text-slate-700 mt-1">Иллюзия решения</p>
-            <p class="text-slate-600 mt-2 leading-relaxed">Это временная внешняя помощь, а не навык саморегуляции. Вы платите за разовое расслабление, но без ежедневной работы с телом мышечный панцирь затягивается обратно уже на третий день.</p>
+            <p class="font-bold text-slate-400 uppercase text-[11px]">Разовый сеанс массажа</p>
+            <p class="text-lg font-bold text-slate-700 mt-1">Краткий перерыв</p>
+            <p class="text-slate-600 mt-2 leading-relaxed">Приятная внешняя помощь, но без ежедневных 5-минутных навыков снятия стресса привычный мышечный панцирь возвращается уже через несколько дней за компьютером.</p>
           </div>
 
           <div class="bg-[#1A352B] text-white p-5 rounded-2xl border-2 border-gold shadow-lg">
-            <p class="font-bold text-goldLight uppercase text-[11px]">КНИГА-СИСТЕМА «СОБЕРИ СЕБЯ ЗАНОВО»</p>
-            
-            <p class="text-emerald-100/90 mt-2 leading-relaxed">Концентрат 30 лет хирургической практики и восточного мастерства. Фундаментальная система самовосстановления и долголетия, которая остается в вашей семейной библиотеке навсегда.</p>
+            <p class="font-bold text-goldLight uppercase text-[11px]">КНИГА «СОБЕРИ СЕБЯ ЗАНОВО»</p>
+            <p class="text-lg font-bold text-white mt-1">Навык на всю жизнь</p>
+            <p class="text-emerald-100/90 mt-2 leading-relaxed">Концентрат 30 лет врачебного опыта и восточной культуры здоровья. Понятная система ежедневных практик, которая остается в вашей семейной библиотеке навсегда.</p>
           </div>
         </div>
 
@@ -725,7 +745,7 @@
           </a>
           <p class="text-xs text-slate-500 mt-2 text-center whitespace-nowrap">
             PDF-формат (117 стр.) • Мгновенный доступ<br>
-    <span style="opacity: 0.85;">🌍 Оплата картой любого банка, СБП</span>
+            <span style="opacity: 0.85;">🌍 Оплата картой любого банка, СБП</span>
           </p>
         </div>
       </div>
@@ -733,35 +753,35 @@
       <!-- БЛОК: ДЛЯ КОГО ЭТА КНИГА -->
       <div class="bg-[#1A352B]/95 text-white rounded-3xl p-6 sm:p-10 border border-gold/40 shadow-xl mb-14">
         <div class="text-center max-w-2xl mx-auto mb-8">
-          <span class="text-xs font-bold uppercase tracking-widest text-goldLight bg-gold/15 px-3 py-1 rounded-full border border-gold/30">Кому книга необходима прямо сейчас</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-goldLight bg-gold/15 px-3 py-1 rounded-full border border-gold/30">Кому эта книга будет особенно полезна</span>
           <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white mt-3">
             Для кого создана эта книга?
           </h3>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto text-xs sm:text-sm">
-          <div class="bg-[#224438]/90 p-4.5 rounded-2xl border border-gold/25 flex items-start gap-3">
+          <div class="bg-[#224438]/90 p-5 rounded-2xl border border-gold/25 flex items-start gap-3">
             <span class="text-gold font-bold text-base mt-0.5 shrink-0">✓</span>
-            <p class="text-emerald-50 leading-relaxed">Сон больше не приносит восстановления: вы просыпаетесь разбитым и чувствуете дефицит сил с первых минут дня.</p>
+            <p class="text-emerald-50 leading-relaxed">Сон перестал давать полноценную бодрость: вы просыпаетесь уставшим и чувствуете дефицит энергии уже в первой половине дня.</p>
           </div>
-          <div class="bg-[#224438]/90 p-4.5 rounded-2xl border border-gold/25 flex items-start gap-3">
+          <div class="bg-[#224438]/90 p-5 rounded-2xl border border-gold/25 flex items-start gap-3">
             <span class="text-gold font-bold text-base mt-0.5 shrink-0">✓</span>
-            <p class="text-emerald-50 leading-relaxed">Тело словно заковано в панцирь: шея, плечи и поясница постоянно каменеют от сидячей работы и накопленного стресса.</p>
+            <p class="text-emerald-50 leading-relaxed">Тело словно заковано в панцирь: шея, плечи и спина постоянно затекают и каменеют от сидячей работы и информационной перегрузки.</p>
           </div>
-          <div class="bg-[#224438]/90 p-4.5 rounded-2xl border border-gold/25 flex items-start gap-3">
+          <div class="bg-[#224438]/90 p-5 rounded-2xl border border-gold/25 flex items-start gap-3">
             <span class="text-gold font-bold text-base mt-0.5 shrink-0">✓</span>
-            <p class="text-emerald-50 leading-relaxed">Безуспешно тратили деньги на витамины, БАДы и бесконечные обследования, но базовый уровень энергии и здоровья так и не вернулся.</p>
+            <p class="text-emerald-50 leading-relaxed">Вы устали от противоречивых советов в интернете и ищете спокойный, выверенный подход без фанатизма и изнурительных тренировок.</p>
           </div>
-          <div class="bg-[#224438]/90 p-4.5 rounded-2xl border border-gold/25 flex items-start gap-3">
+          <div class="bg-[#224438]/90 p-5 rounded-2xl border border-gold/25 flex items-start gap-3">
             <span class="text-gold font-bold text-base mt-0.5 shrink-0">✓</span>
-            <p class="text-emerald-50 leading-relaxed">Вам нужна целостная система от практикующего врача, которая объединяет глубокое восстановление, внутренний баланс и питание, собирая организм в единый работающий механизм.</p>
+            <p class="text-emerald-50 leading-relaxed">Вам близка идея целостного подхода от практикующего врача, где внимание к сосудам, дыханию, питанию и внутреннему покою собрано в единую систему.</p>
           </div>
         </div>
       </div>
 
-      <!-- Отзывы читателей (в виде мессенджер-карточек) -->
+      <!-- Отзывы первых читателей -->
       <div class="text-center max-w-2xl mx-auto mb-8">
-        
+        <span class="text-xs font-bold uppercase tracking-widest text-emeraldAccent bg-white px-3.5 py-1 rounded-full shadow-sm">Впечатления первых читателей и участников предпечатного чтения</span>
         <h3 class="font-serif text-2xl sm:text-3xl font-bold text-emeraldDeep mt-3">
           «Эта книга вернула мне ощущение, что я снова живу, а не просто функционирую...»
         </h3>
@@ -774,13 +794,13 @@
             <div class="flex items-center justify-between mb-3.5 pb-2.5 border-b border-slate-100">
               <div class="flex items-center gap-2">
                 <div class="w-7 h-7 rounded-full bg-emeraldAccent text-white flex items-center justify-center text-xs font-bold">💬</div>
-                <span class="text-xs font-bold text-emeraldDeep">Отзыв</span>
+                <span class="text-xs font-bold text-emeraldDeep">Читательский отклик</span>
               </div>
               <div class="text-gold text-xs">★★★★★</div>
             </div>
             
             <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed">
-              «Купила книгу без особых надежд, просто потому что надоело просыпаться среди ночи с тяжелым сердцем. Написано очень понятно, без лишней академической заумности. Понравились дыхательные упражнения и правила по еде — наконец-то ушла эта дурацкая тяжесть после обеда. Сплю спокойнее, и по утрам уже нет прежнего тумана в голове.»
+              «Начала читать рукопись просто потому, что устала просыпаться среди ночи от внутреннего беспокойства. Написано очень понятно, теплым языком, без сухой академической заумности. Внедрила дыхательные упражнения и простые правила по еде — ушла привычная тяжесть после обеда. Засыпаю гораздо спокойнее, и по утрам голова свежая».
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-emeraldDeep flex items-center justify-between">
@@ -794,13 +814,13 @@
             <div class="flex items-center justify-between mb-3.5 pb-2.5 border-b border-slate-100">
               <div class="flex items-center gap-2">
                 <div class="w-7 h-7 rounded-full bg-emeraldAccent text-white flex items-center justify-center text-xs font-bold">💬</div>
-                <span class="text-xs font-bold text-emeraldDeep">Отзыв</span>
+                <span class="text-xs font-bold text-emeraldDeep">Читательский отклик</span>
               </div>
               <div class="text-gold text-xs">★★★★★</div>
             </div>
             
             <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed">
-              «Для меня решающим стало то, что Михаил — действующий сосудистый хирург, к.м.н. Когда он объясняет, как пережимаются сосуды, почему хрустят суставы и как углекислый газ открывает доступ кислороду в мозг — в голове складывается весь пазл. Шея и поясница ожили уже через неделю».
+              «Для меня решающим стало то, что Михаил — действующий сосудистый хирург, к.м.н. Когда врач на пальцах объясняет, как от стресса зажимаются мышцы и сосуды, и как правильное дыхание помогает снять этот спазм — в голове наконец складывается весь пазл. Утренняя скованность в шее и спине стала отпускать уже в первую неделю практики».
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-emeraldDeep flex items-center justify-between">
@@ -814,13 +834,13 @@
             <div class="flex items-center justify-between mb-3.5 pb-2.5 border-b border-slate-100">
               <div class="flex items-center gap-2">
                 <div class="w-7 h-7 rounded-full bg-emeraldAccent text-white flex items-center justify-center text-xs font-bold">💬</div>
-                <span class="text-xs font-bold text-emeraldDeep">Отзыв</span>
+                <span class="text-xs font-bold text-emeraldDeep">Читательский отклик</span>
               </div>
               <div class="text-gold text-xs">★★★★★</div>
             </div>
             
             <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed">
-              «Начали с мужем выполнять утреннюю разминку для сосудов прямо в постели. Давление перестало скакать как раньше, ушла тревожность, появились жизненные силы. Рекомендую к приобретению».
+              «Начали с мужем выполнять мягкую утреннюю разминку прямо в постели по иллюстрациям из книги. Утренняя разбитость сменилась приятным теплом в теле, ушла фоновая суета, появилось гораздо больше бодрости на весь день. Очень светлая и практичная книга».
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-bold text-emeraldDeep flex items-center justify-between">
@@ -847,7 +867,7 @@
             <span class="text-goldDark text-lg group-open:rotate-45 transition-transform">+</span>
           </summary>
           <p class="text-slate-600 text-xs sm:text-sm mt-2.5 leading-relaxed">
-            Кнопка переводит вас на официальную международную платформу цифровых товаров <strong>Lavatop</strong>. Там вы можете одним кликом выбрать удобную валюту и безопасно оплатить книгу картой любого банка или через СБП.
+            Кнопка переводит вас на официальную международную платформу цифровых товаров <strong>Lava.top</strong>. Там вы можете одним кликом выбрать удобную валюту (RUB, USD, EUR) и безопасно оплатить книгу картой любого банка или через СБП.
           </p>
         </details>
 
@@ -857,17 +877,17 @@
             <span class="text-goldDark text-lg group-open:rotate-45 transition-transform">+</span>
           </summary>
           <p class="text-slate-600 text-xs sm:text-sm mt-2.5 leading-relaxed">
-            Доступ открывается <strong>мгновенно после оплаты</strong> (плюс сылка на файл автоматически дублируется на вашу электронную почту). Вы получаете полную иллюстрированную версию в универсальном формате <strong>PDF (117 страниц)</strong>.
+            Доступ открывается <strong>мгновенно после оплаты</strong> (плюс ссылка на файл автоматически дублируется на вашу электронную почту). Вы получаете полную иллюстрированную версию в универсальном формате <strong>PDF (117 страниц)</strong>, которую удобно читать со смартфона, планшета или компьютера.
           </p>
         </details>
 
         <details class="group bg-white rounded-2xl border border-slate-200 p-4 sm:p-5">
           <summary class="cursor-pointer font-bold text-emeraldDeep text-xs sm:text-base flex items-center justify-between gap-2 list-none">
-            <span>🩺 Подойдёт ли система, если вам 40–65 лет и у вас нет никакой спортивной подготовки?</span>
+            <span>🩺 Подойдёт ли система, если мне 40–65+ лет и нет спортивной подготовки?</span>
             <span class="text-goldDark text-lg group-open:rotate-45 transition-transform">+</span>
           </summary>
           <p class="text-slate-600 text-xs sm:text-sm mt-2.5 leading-relaxed">
-            Да, книга создана хирургом, к.м.н. именно для бережного, физиологичного восстановления организма. Здесь нет изнуряющих тренировок, прыжков или сложных поз — все базовые комплексы выполняются мягко, начиная прямо с постели, буквально за 5–10 минут в день.
+            Да, книга создана практикующим хирургом, к.м.н. именно для бережного, физиологичного самовосстановления. Здесь нет изнуряющих тренировок, прыжков или сложных гимнастических поз — все базовые комплексы выполняются мягко, в комфортной амплитуде, начиная прямо с постели, буквально за 5–10 минут в день.
           </p>
         </details>
       </div>
@@ -883,16 +903,16 @@
           Мгновенная цифровая доставка • Полное издание (117 стр. PDF)
         </span>
         <h2 class="font-serif text-2xl sm:text-4xl font-bold text-emeraldDeep mt-3 leading-tight">
-          Вы можете закрыть эту страницу и оставить всё как есть. А можете начать возвращение к себе настоящему уже сегодня вечером.
+          Вы можете закрыть эту страницу и оставить всё как есть. А можете сделать первый шаг к лёгкости и ресурсу уже сегодня вечером.
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
-          Организм обладает колоссальным запасом прочности — он годами ждал, когда вы обратите на него внимание. Снимите внутреннее напряжение, верните телу подвижность, а голове — ясность, обретя опору в проверенной системе восстановления
+          Организм обладает огромным потенциалом к саморегуляции — ему нужно лишь перестать мешать и дать бережную систему поддержки. Снимите накопленное напряжение, верните телу подвижность, а голове — спокойную ясность.
         </p>
 
         <div class="text-left max-w-lg mx-auto my-6 space-y-2 text-xs sm:text-sm text-slate-700 bg-ivory p-4 sm:p-5 rounded-2xl border border-slate-200">
           <div class="flex items-start gap-2.5"><span class="text-emeraldAccent font-bold">✔</span> <span><strong>Фундаментальное издание «Собери себя заново» (PDF, 117 стр.)</strong> — навсегда в вашей личной и семейной библиотеке.</span></div>
-          <div class="flex items-start gap-2.5"><span class="text-emeraldAccent font-bold">✔</span> <span><strong>Внутри — вся система целиком:</strong> соматические и телесные практики, дыхательные алгоритмы, нутрициология, работа с мозгом и сосудами, а также многое другое — включая подробные авторские иллюстрации для каждого упражнения.</span></div>
-          <div class="flex items-start gap-2.5"><span class="text-emeraldAccent font-bold">✔</span> <span><strong>🌍 Удобная оплата без границ: карты любых банков, СБП и международные платежные системы • Мгновенный доступ сразу после оплаты.</span></div>
+          <div class="flex items-start gap-2.5"><span class="text-emeraldAccent font-bold">✔</span> <span><strong>Внутри — вся система целиком:</strong> мягкие телесные практики, дыхательные алгоритмы, культура питания, забота о сосудах и внимании, включая подробные авторские иллюстрации для каждого упражнения.</span></div>
+          <div class="flex items-start gap-2.5"><span class="text-emeraldAccent font-bold">✔</span> <span><strong>🌍 Удобная оплата без границ:</strong> карты любых банков, СБП и международные платежные системы • Мгновенный доступ сразу после оплаты.</span></div>
         </div>
 
         <div class="flex flex-col items-center">
@@ -906,19 +926,32 @@
         </div>
 
         <p class="mt-4 text-[11px] text-slate-400">
-          Безопасная оплата через платформу Lavatop • Нажимая кнопку, вы соглашаетесь с <a href="#offer" class="underline hover:text-emeraldDeep">условиями публичной оферты</a>.
+          Безопасная оплата через платформу Lava.top • Нажимая кнопку, вы соглашаетесь с <a href="#offer" class="underline hover:text-emeraldDeep">условиями публичной оферты</a> и <a href="#privacy" class="underline hover:text-emeraldDeep">политикой конфиденциальности</a>.
         </p>
       </div>
 
+      <!-- ДОГОВОР-ОФЕРТА -->
       <details id="offer" class="mt-6 bg-[#132A22]/90 rounded-2xl p-4 sm:p-5 border border-gold/30 text-xs text-emerald-100/80">
         <summary class="font-bold text-goldLight cursor-pointer">
           ДОГОВОР-ОФЕРТА (нажмите, чтобы развернуть полный текст)
         </summary>
         <div class="mt-3 space-y-2 leading-relaxed">
-          <p>Настоящий документ является официальным предложением (публичной офертой) физического лица любому лицу заключить договор купли-продажи электронной книги на условиях, изложенных ниже.</p>
-          <p><strong>1. Общие положения:</strong> 1.1. Настоящий договор является публичной офертой в соответствии с действующим законодательством. 1.2. Осуществляя покупку книги, Покупатель соглашается с условиями данной оферты.</p>
-          <p><strong>2. Предмет договора:</strong> 2.1. Продавец обязуется предоставить Покупателю электронную книгу «Собери себя заново» в формате PDF после оплаты.</p>
-          <p><strong>3. Порядок покупки и оплаты:</strong> 3.1. Оплата производится через международную платёжную систему Lavatop. 3.2. После успешной оплаты книга предоставляется автоматически.</p>
+          <p>Настоящий документ является официальным предложением (публичной офертой) Авторов любому физическому лицу заключить договор купли-продажи цифрового товара (электронной книги) на условиях, изложенных ниже.</p>
+          <p><strong>1. Общие положения:</strong> 1.1. Настоящий договор является публичной офертой в соответствии с действующим законодательством. 1.2. Осуществляя оплату книги, Покупатель полностью принимает условия данной оферты.</p>
+          <p><strong>2. Предмет договора:</strong> 2.1. Продавец обязуется предоставить Покупателю доступ к электронной книге «Собери себя заново» в цифровом формате PDF после подтверждения оплаты.</p>
+          <p><strong>3. Порядок покупки и оплаты:</strong> 3.1. Приём платежей и автоматическая цифровая доставка осуществляются через партнёрскую международную платформу Lava.top. 3.2. Ссылка на скачивание направляется Покупателю автоматически на указанный при оплате адрес электронной почты.</p>
+        </div>
+      </details>
+
+      <!-- ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ (152-ФЗ) -->
+      <details id="privacy" class="mt-3 bg-[#132A22]/90 rounded-2xl p-4 sm:p-5 border border-gold/30 text-xs text-emerald-100/80">
+        <summary class="font-bold text-goldLight cursor-pointer">
+          ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ И ОБРАБОТКИ ФАЙЛОВ COOKIE
+        </summary>
+        <div class="mt-3 space-y-2 leading-relaxed">
+          <p><strong>1. Общие положения:</strong> Настоящий сайт (https://avoevoda.com/) уважает право посетителей на неприкосновенность частной жизни и обрабатывает обезличенные данные в соответствии с требованиями применимого законодательства (включая ФЗ № 152-ФЗ «О персональных данных»).</p>
+          <p><strong>2. Сбор данных на сайте:</strong> На самом сайте avoevoda.com отсутствуют формы сбора имени, телефона или банковских реквизитов. Оформление заказа и ввод электронной почты для доставки книги происходят непосредственно на защищённой стороне платёжной платформы Lava.top в соответствии с её политикой конфиденциальности.</p>
+          <p><strong>3. Файлы Cookie и веб-аналитика:</strong> Для улучшения работы сайта и анализа посещаемости используются файлы cookie и сервисы веб-аналитики Яндекс.Метрика (включая технологию Вебвизор) и Google Analytics. Эти сервисы собирают обезличенные технические данные о визите (тип браузера, время на сайте, просмотренные блоки). Вы можете в любой момент отключить сохранение файлов cookie в настройках своего браузера.</p>
         </div>
       </details>
     </div>
@@ -928,15 +961,27 @@
   <footer class="bg-[#132A22] text-emerald-200/70 py-8 border-t border-gold/20 text-center text-xs px-4">
     <p class="text-goldLight font-serif font-bold text-sm mb-1">© Михаил Воевода, Андрей Воевода. Электронная книга «Собери себя заново»</p>
     <p class="max-w-2xl mx-auto text-[11px] leading-relaxed">
-      Материалы данной книги носят информационно-образовательный характер, не являются медицинской услугой и не заменяют очную консультацию лечащего врача.
+      Материалы данной книги и сайта носят информационно-образовательный характер, отражают личный и профессиональный опыт авторов, не являются медицинской услугой и не заменяют очную консультацию лечащего врача. Имеются противопоказания, перед применением практик проконсультируйтесь со специалистом.
     </p>
   </footer>
 
-  <!-- НИЖНЯЯ ЗАКРЕПЛЕННАЯ ПАНЕЛЬ -->
+  <!-- УВЕДОМЛЕНИЕ О COOKIE (152-ФЗ) -->
+  <div id="cookieBanner" class="fixed bottom-16 sm:bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:max-w-md z-50 bg-[#1A352B]/95 backdrop-blur-md text-emerald-50 p-4 rounded-2xl border border-gold/40 shadow-2xl hidden">
+    <div class="flex items-start justify-between gap-3">
+      <p class="text-[11px] leading-relaxed">
+        Мы используем файлы cookie и сервисы аналитики (Яндекс.Метрика, Google Analytics), чтобы сайт работал лучше. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="#privacy" onclick="acceptCookies()" class="text-goldLight underline">политикой конфиденциальности</a>.
+      </p>
+      <button onclick="acceptCookies()" class="bg-gold text-emeraldDeep font-bold text-xs px-3.5 py-1.5 rounded-lg shrink-0 hover:bg-goldLight transition">
+        Понятно
+      </button>
+    </div>
+  </div>
+
+  <!-- НИЖНЯЯ ЗАКРЕПЛЕННАЯ ПАНЕЛЬ (МОБИЛЬНАЯ) -->
   <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#132A22]/95 backdrop-blur-md border-t border-gold/40 px-4 py-2.5 flex items-center justify-between gap-3 shadow-2xl">
     <div class="text-white leading-tight">
       <span class="block text-xs font-serif font-bold text-goldLight">СОБЕРИ СЕБЯ ЗАНОВО</span>
-      <span class="text-[11px] text-emerald-100/80">Книга-откровение • PDF</span>
+      <span class="text-[11px] text-emerald-100/80">Книга-система • PDF</span>
     </div>
     <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-xs px-5 py-2.5 rounded-lg uppercase tracking-wide shrink-0">
       Получить книгу →
@@ -981,13 +1026,25 @@
       });
 
       if (count === 0) {
-        counterEl.textContent = 'Диагностика состояния';
-        descEl.textContent = 'Отметьте хотя бы один пункт выше — и вы увидите, почему обычные советы «больше отдыхать» не работают.';
+        counterEl.textContent = 'Самопроверка состояния';
+        descEl.textContent = 'Отметьте хотя бы один пункт выше — и вы увидите, почему обычные советы «просто выспаться» не дают результата.';
       } else {
-        counterEl.textContent = `Обнаружено сигналов блокировки: ${count} из 4 • Ваш «ручной тормоз» затянут`;
-        descEl.textContent = 'Ваш организм тратит колоссальное количество энергии АТФ на непрерывное обслуживание фонового сосудистого и мышечного напряжения.';
+        counterEl.textContent = `Отмечено сигналов перенапряжения: ${count} из 4 • Ваш «ручной тормоз» затянут`;
+        descEl.textContent = 'Ваш организм тратит огромное количество сил на непрерывное поддержание фонового сосудистого и мышечного тонуса.';
       }
     }
+
+    // Логика баннера Cookie
+    function acceptCookies() {
+      localStorage.setItem('avoevoda_cookie_accepted', 'true');
+      document.getElementById('cookieBanner').classList.add('hidden');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      if (!localStorage.getItem('avoevoda_cookie_accepted')) {
+        document.getElementById('cookieBanner').classList.remove('hidden');
+      }
+    });
   </script>
 </body>
 </html>
