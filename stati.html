@@ -67,21 +67,25 @@
 </head>
 <body class="bg-ivory text-slate-900 font-sans antialiased selection:bg-gold selection:text-emeraldDeep overflow-x-hidden pb-28 sm:pb-0 flex flex-col min-h-screen">
 
-  <!-- ВЕРХНЯЯ НАВИГАЦИЯ (Изменены ссылки для возврата на лендинг) -->
+  <!-- ВЕРХНЯЯ НАВИГАЦИЯ -->
   <nav class="sticky top-0 z-50 bg-[#132A22]/95 backdrop-blur-md border-b border-gold/30 shadow-lg">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-14 sm:h-16 py-2">
-        <a href="index.html" class="flex items-center gap-2.5">
-          <div class="w-8 h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-base shrink-0">В</div>
+        <!-- Логотип возвращает строго на самый верх главной страницы -->
+        <a href="index.html" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-base shrink-0 group-hover:scale-105 transition">В</div>
           <div>
-            <span class="block text-goldLight font-serif font-bold tracking-wider text-xs sm:text-base leading-none">СОБЕРИ СЕБЯ ЗАНОВО</span>
+            <span class="block text-goldLight font-serif font-bold tracking-wider text-xs sm:text-base leading-none group-hover:text-gold transition">СОБЕРИ СЕБЯ ЗАНОВО</span>
             <span class="block text-[10px] text-emerald-100/75 mt-0.5">Книга-система М. и А. Воеводы</span>
           </div>
         </a>
 
+        <!-- Меню без «Авторов», ссылки ведут к соответствующим блокам лендинга -->
         <div class="hidden md:flex items-center gap-6 text-sm font-medium text-emerald-100/90">
-          <a href="index.html#paradox" class="hover:text-goldLight transition">Книга</a>
-          <a href="index.html#surgeon" class="hover:text-goldLight transition">Авторы</a>
+          <a href="index.html#paradox" class="hover:text-goldLight transition">Парадокс усталости</a>
+          <a href="index.html#surgeon" class="hover:text-goldLight transition">Откровение хирурга</a>
+          <a href="index.html#mysteries" class="hover:text-goldLight transition">7 открытий книги</a>
+          <a href="index.html#scenarios" class="hover:text-goldLight transition">Два сценария</a>
           <a href="stati.html" class="text-gold font-bold">Статьи</a>
         </div>
 
@@ -113,11 +117,11 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
       
       <!-- КАРТОЧКА СТАТЬИ №1 -->
-<a href="sonlivost-posle-obeda.html" class="article-card block bg-white rounded-2xl border-2 border-slate-200/90 hover:border-gold shadow-sm overflow-hidden group flex flex-col h-full">
-  <!-- Блок для картинки карточки -->
-  <div class="w-full h-48 bg-[#1A352B] relative overflow-hidden">
-    <img src="images/sonlivost.webp" alt="Сонливость после обеда" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-  </div>
+      <a href="sonlivost-posle-obeda.html" class="article-card block bg-white rounded-2xl border-2 border-slate-200/90 hover:border-gold shadow-sm overflow-hidden group flex flex-col h-full">
+        <!-- Блок для картинки карточки -->
+        <div class="w-full h-48 bg-[#1A352B] relative overflow-hidden">
+          <img src="images/sonlivost.webp" alt="Сонливость после обеда" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        </div>
         
         <div class="p-6 flex flex-col flex-grow">
           <span class="text-[11px] font-bold uppercase tracking-widest text-emeraldAccent mb-2 block">Физиология питания</span>
@@ -134,7 +138,7 @@
         </div>
       </a>
 
-      <!-- КАРТОЧКА СТАТЬИ №2 (Пока просто как пример разметки) -->
+      <!-- КАРТОЧКА СТАТЬИ №2 (Анонс) -->
       <a href="#" class="article-card block bg-white rounded-2xl border-2 border-slate-200/90 hover:border-gold shadow-sm overflow-hidden group flex flex-col h-full opacity-60">
         <div class="w-full h-48 bg-slate-100 relative overflow-hidden flex items-center justify-center border-b border-slate-200">
           <span class="text-slate-400 font-serif italic text-lg">Скоро новая статья</span>
