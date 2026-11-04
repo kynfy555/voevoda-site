@@ -69,32 +69,50 @@
 
   <!-- ВЕРХНЯЯ НАВИГАЦИЯ -->
   <nav class="sticky top-0 z-50 bg-[#132A22]/95 backdrop-blur-md border-b border-gold/30 shadow-lg">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto px-3 sm:px-6">
       <div class="flex items-center justify-between h-14 sm:h-16 py-2">
         
-        <!-- Логотип (клик возвращает на главную страницу к книге) -->
-        <a href="index.html" class="flex items-center gap-2.5 group">
-          <div class="w-8 h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-base shrink-0 group-hover:scale-105 transition">В</div>
-          <div>
-            <span class="block text-goldLight font-serif font-bold tracking-wider text-xs sm:text-base leading-none group-hover:text-gold transition">СОБЕРИ СЕБЯ ЗАНОВО</span>
-            <span class="block text-[10px] text-emerald-100/75 mt-0.5">Книга-система М. и А. Воеводы</span>
+        <!-- Логотип и название слева (Адаптивные) -->
+        <a href="index.html" class="flex items-center gap-2 group min-w-0 pr-2">
+          <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-sm sm:text-base shrink-0 group-hover:scale-105 transition">В</div>
+          <div class="min-w-0">
+            <span class="block text-goldLight font-serif font-bold tracking-wider text-[11px] sm:text-base leading-none truncate group-hover:text-gold transition">СОБЕРИ СЕБЯ ЗАНОВО</span>
+            <!-- Подпись скрывается на мобильных -->
+            <span class="hidden sm:block text-[10px] text-emerald-100/75 mt-0.5">Книга-система М. и А. Воеводы</span>
           </div>
         </a>
-
-        <!-- Кнопка возврата на главную / к книге -->
-        <div class="flex items-center gap-3">
-          <a href="index.html" class="text-xs sm:text-sm font-medium text-emerald-100 hover:text-goldLight transition flex items-center gap-1.5 px-3 py-2 rounded-lg bg-emeraldDark/60 border border-emerald-700/50">
-            <span>← На главную к книге</span>
+        
+        <!-- Кнопки справа -->
+        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+          <!-- Возврат на главную (виден на планшетах и ПК, скрыт на телефоне ради компактности) -->
+          <a href="index.html" class="hidden md:flex text-sm font-medium text-emerald-100 hover:text-goldLight transition items-center gap-1.5 px-3 py-2 rounded-lg bg-emeraldDark/60 border border-emerald-700/50">
+            <span>← На главную</span>
           </a>
-
-          <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg uppercase tracking-wide">
+          
+          <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-[11px] sm:text-sm px-2.5 sm:px-5 py-1.5 sm:py-2.5 rounded-lg uppercase tracking-wide">
             Получить книгу
           </a>
+          
+          <!-- Кнопка мобильного меню (Гамбургер) -->
+          <button id="mobile-menu-btn" class="md:hidden p-1.5 rounded-lg bg-emeraldDark/80 border border-emerald-700/60 text-goldLight hover:text-white transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
         </div>
-
       </div>
     </div>
+    
+    <!-- Выпадающее мобильное меню -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#132A22] border-t border-gold/20 px-4 pt-3 pb-5 space-y-3 shadow-xl absolute w-full">
+      <a href="index.html" class="block text-sm font-bold text-goldLight py-1.5">← На главную к книге</a>
+    </div>
   </nav>
+
+  <!-- СКРИПТ ДЛЯ ОТКРЫТИЯ МЕНЮ -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
 
   <!-- ШАПКА РАЗДЕЛА -->
   <header class="bg-hero-radial text-white py-12 sm:py-16 border-b-4 border-gold">
@@ -148,8 +166,6 @@
       <a href="3-zazhima.html" class="article-card block bg-white rounded-2xl border-2 border-slate-200/90 hover:border-gold shadow-sm overflow-hidden group flex flex-col h-full">
         <!-- Блок для картинки карточки -->
         <div class="w-full aspect-video bg-[#1A352B] relative overflow-hidden flex items-center justify-center">
-          <!-- Замените на img, когда сделаете обложку -->
-          
           <img src="images/3-zazhima.webp" alt="Ночные воры энергии" width="800" height="450" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
         </div>
         
