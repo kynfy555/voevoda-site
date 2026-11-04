@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Главная страница лендинга -->
   <url>
     <loc>https://avoevoda.com/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <!-- Раздел со статьями (Витрина) -->
+  <url>
+    <loc>https://avoevoda.com/stati.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <!-- Статья: Сонливость после обеда -->
+  <url>
+    <loc>https://avoevoda.com/sonlivost-posle-obeda.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>
