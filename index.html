@@ -212,6 +212,7 @@
   <nav class="sticky top-0 z-50 bg-[#132A22]/95 backdrop-blur-md border-b border-gold/30 shadow-lg">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-14 sm:h-16 py-2">
+        
         <a href="#" class="flex items-center gap-2.5">
           <div class="w-8 h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-base shrink-0">
             В
@@ -222,18 +223,39 @@
           </div>
         </a>
 
-       <div class="hidden md:flex items-center gap-6 text-sm font-medium text-emerald-100/90">
-  <a href="#paradox" class="hover:text-goldLight transition">Парадокс усталости</a>
-  <a href="#surgeon" class="hover:text-goldLight transition">Откровение хирурга</a>
-  <a href="#mysteries" class="hover:text-goldLight transition">7 открытий книги</a>
-  <a href="#scenarios" class="hover:text-goldLight transition">Два сценария</a>
-  <a href="stati.html" class="hover:text-goldLight transition">Статьи</a>
-</div>
+        <!-- ДЕСКТОП-МЕНЮ (скрыто на мобильных) -->
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium text-emerald-100/90">
+          <a href="#paradox" class="hover:text-goldLight transition">Парадокс усталости</a>
+          <a href="#surgeon" class="hover:text-goldLight transition">Откровение хирурга</a>
+          <a href="#mysteries" class="hover:text-goldLight transition">7 открытий книги</a>
+          <a href="#scenarios" class="hover:text-goldLight transition">Два сценария</a>
+          <a href="stati.html" class="hover:text-goldLight transition">Статьи</a>
+        </div>
+        
+        <!-- Кнопка заказа + Кнопка мобильного меню (три полоски) -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-xs sm:text-sm px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg uppercase tracking-wide">
+            Получить книгу
+          </a>
+          
+          <!-- Кнопка «Гамбургер» для телефона-->
+          <button id="mobile-menu-btn" class="md:hidden p-1.5 rounded-lg bg-emeraldDark/80 border border-emerald-700/60 text-goldLight hover:text-white transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
 
-        <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg uppercase tracking-wide">
-          Получить книгу
-        </a>
       </div>
+    </div>
+    
+    <!-- ВЫПАДАЮЩЕЕ МОБИЛЬНОЕ МЕНЮ -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#132A22] border-t border-gold/20 px-4 pt-3 pb-5 space-y-3 shadow-xl absolute w-full">
+      <a href="#paradox" class="mobile-link block text-sm font-medium text-emerald-100 hover:text-goldLight transition">Парадокс усталости</a>
+      <a href="#surgeon" class="mobile-link block text-sm font-medium text-emerald-100 hover:text-goldLight transition">Откровение хирурга</a>
+      <a href="#mysteries" class="mobile-link block text-sm font-medium text-emerald-100 hover:text-goldLight transition">7 открытий книги</a>
+      <a href="#scenarios" class="mobile-link block text-sm font-medium text-emerald-100 hover:text-goldLight transition">Два сценария</a>
+      <a href="stati.html" class="block text-sm font-bold text-gold py-1.5">Статьи</a>
     </div>
   </nav>
 
@@ -1050,6 +1072,21 @@
   </div>
 
   <script>
+    // Логика мобильного меню
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', function() {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
     function switchScenario(mode) {
       const panelA = document.getElementById('panelScenarioA');
       const panelB = document.getElementById('panelScenarioB');
