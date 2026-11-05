@@ -99,12 +99,22 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-14 sm:h-16 py-2">
         
-        <!-- Логотип и название слева (Адаптивные) -->
-        <a href="index.html" class="flex items-center gap-2 group min-w-0 pr-2">
+        <!-- Логотип и название слева -->
+        <a href="index.html" class="flex items-center gap-2 sm:gap-2.5 group pr-2">
+          <!-- Кружок с буквой В -->
           <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-sm sm:text-base shrink-0 group-hover:scale-105 transition">В</div>
-          <div class="min-w-0">
-            <span class="block text-goldLight font-serif font-bold tracking-wider text-[11px] sm:text-base leading-none truncate group-hover:text-gold transition">СОБЕРИ СЕБЯ ЗАНОВО</span>
-            <span class="hidden sm:block text-[10px] text-emerald-100/75 mt-0.5">Книга-система М. и А. Воеводы</span>
+          
+          <!-- ДЕСКТОП: Полное название (скрыто на мобильных) -->
+          <div class="hidden sm:block">
+            <span class="block text-goldLight font-serif font-bold tracking-wider text-base leading-none group-hover:text-gold transition">СОБЕРИ СЕБЯ ЗАНОВО</span>
+            <span class="block text-[10px] text-emerald-100/75 mt-0.5">Книга-система М. и А. Воеводы</span>
+          </div>
+          
+          <!-- ТЕЛЕФОН: Короткая ссылка (скрыто на компьютерах) -->
+          <div class="sm:hidden">
+            <span class="text-goldLight font-semibold tracking-wide text-xs group-hover:text-gold transition whitespace-nowrap">
+              ← На главную
+            </span>
           </div>
         </a>
 
