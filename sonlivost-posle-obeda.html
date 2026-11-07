@@ -94,23 +94,16 @@
 </head>
 <body class="bg-ivory text-slate-800 font-sans antialiased selection:bg-gold selection:text-emeraldDeep overflow-x-hidden pb-28 sm:pb-0">
 
-  <!-- ВЕРХНЯЯ НАВИГАЦИЯ (ЕДИНАЯ ДЛЯ ВСЕХ СТАТЕЙ) -->
+  <!-- ВЕРХНЯЯ НАВИГАЦИЯ -->
   <nav class="sticky top-0 z-50 bg-[#132A22]/95 backdrop-blur-md border-b border-gold/30 shadow-lg">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-14 sm:h-16 py-2">
-        
-        <!-- Логотип и название слева -->
         <a href="index.html" class="flex items-center gap-2 sm:gap-2.5 group pr-2">
-          <!-- Кружок с буквой В -->
           <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-sm sm:text-base shrink-0 group-hover:scale-105 transition">В</div>
-          
-          <!-- ДЕСКТОП: Полное название (скрыто на мобильных) -->
           <div class="hidden sm:block">
             <span class="block text-goldLight font-serif font-bold tracking-wider text-base leading-none group-hover:text-gold transition">СОБЕРИ СЕБЯ ЗАНОВО</span>
             <span class="block text-[10px] text-emerald-100/75 mt-0.5">Книга-система М. и А. Воеводы</span>
           </div>
-          
-          <!-- ТЕЛЕФОН: Короткая ссылка (скрыто на компьютерах) -->
           <div class="sm:hidden">
             <span class="text-goldLight font-semibold tracking-wide text-xs group-hover:text-gold transition whitespace-nowrap">
               ← На главную
@@ -118,19 +111,15 @@
           </div>
         </a>
 
-        <!-- ДЕСКТОП-МЕНЮ (Книга и Статьи - видно только на ПК) -->
         <div class="hidden md:flex items-center gap-6 text-sm font-medium text-emerald-100/90">
           <a href="index.html" class="hover:text-goldLight transition">Книга</a>
           <a href="stati.html" class="text-gold font-bold">Статьи</a>
         </div>
         
-        <!-- Кнопки справа -->
         <div class="flex items-center gap-2 sm:gap-3 shrink-0">
           <a href="index.html" class="gold-gradient-btn font-extrabold text-[11px] sm:text-sm px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg uppercase tracking-wide">
             Узнать о книге
           </a>
-          
-          <!-- Кнопка мобильного меню (Гамбургер / 3 полоски) -->
           <button id="mobile-menu-btn" class="md:hidden p-1.5 rounded-lg bg-emeraldDark/80 border border-emerald-700/60 text-goldLight hover:text-white transition">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           </button>
@@ -138,7 +127,6 @@
       </div>
     </div>
     
-    <!-- ВЫПАДАЮЩЕЕ МОБИЛЬНОЕ МЕНЮ (Пирожок) -->
     <div id="mobile-menu" class="hidden md:hidden bg-[#132A22] border-t border-gold/20 px-4 pt-3 pb-5 space-y-3 shadow-xl absolute w-full">
       <a href="stati.html" class="block text-sm font-bold text-goldLight py-1.5">← Все статьи</a>
       <a href="index.html" class="block text-sm font-medium text-emerald-300 hover:text-goldLight transition pt-1 border-t border-emerald-800/40">На главную страницу</a>
@@ -196,6 +184,17 @@
       <blockquote class="border-l-4 border-gold pl-5 py-3 my-8 bg-white rounded-r-2xl shadow-sm italic font-serif text-emeraldDeep text-lg sm:text-xl leading-relaxed">
         «Энергия не уходит на переваривание пищи. Она сгорает в попытках преодолеть ваши внутренние спазмы и зажимы».
       </blockquote>
+      
+      <!-- ВНУТРЕННЯЯ ПЛАШКА-БАННЕР -->
+      <div class="my-10 bg-emeraldCard rounded-2xl p-6 sm:p-8 border border-gold/30 shadow-md text-center">
+        <h3 class="font-serif text-xl sm:text-2xl font-bold text-white mb-2">Хроническая усталость мешает жить?</h3>
+        <p class="text-emerald-100 text-sm sm:text-base mb-6">
+          Углеводные «качели» и внутренние спазмы сжигают вашу энергию быстрее, чем вы успеваете отдыхать. Узнайте, как перезапустить обмен веществ и вернуть бодрость.
+        </p>
+        <a href="index.html" class="gold-gradient-btn font-extrabold text-sm px-6 py-3 rounded-xl uppercase tracking-wider inline-flex items-center gap-2">
+          <span>Узнать подробности о книге</span>
+        </a>
+      </div>
 
       <h2>Три простых правила для ясной головы после обеда</h2>
       <p>Чтобы послеобеденное время стало самым продуктивным, не нужно садиться на жесткие диеты. Достаточно внедрить небольшие изменения в привычный ритуал.</p>
@@ -231,6 +230,7 @@
     Почему кофе и отдых спасают ненадолго?
   </h3>
   
+  <!-- Разделенный на абзацы текст для легкого чтения с телефона -->
   <div class="text-emerald-100/90 text-sm max-w-xl mx-auto leading-relaxed mb-8 space-y-4">
     <p>Они не устраняют корень проблемы — углеводные «качели» и скрытые зажимы.</p>
     <p>В книге <strong>«Собери себя заново»</strong> мы с сосудистым хирургом Михаилом Воеводой объединили 30-летний опыт и 12 лет практики, чтобы дать вам пошаговый алгоритм возвращения ровной энергии.</p>
@@ -239,7 +239,6 @@
   <div class="flex flex-col items-center">
     <a href="index.html" class="gold-gradient-btn inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-sm sm:text-base uppercase tracking-wide transition-transform hover:scale-105 shadow-lg shadow-gold/20">
       <span>Узнать подробности о книге</span>
-     
     </a>
   </div>
 </div>
