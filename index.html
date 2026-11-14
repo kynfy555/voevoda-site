@@ -201,15 +201,15 @@
   <!-- ВЕРХНЯЯ НАВИГАЦИЯ -->
   <nav class="sticky top-0 z-50 bg-[#132A22]/95 backdrop-blur-md border-b border-gold/30 shadow-lg">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-14 sm:h-16 py-2">
+      <div class="flex items-center justify-between h-14 sm:h-16 py-2 gap-2">
         
-        <a href="#" class="flex items-center gap-2.5">
-          <div class="w-8 h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-base shrink-0">
+        <a href="#" class="flex items-center gap-2 sm:gap-2.5 min-w-0">
+          <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-goldLight font-serif font-bold text-sm sm:text-base shrink-0">
             В
           </div>
-          <div>
-            <span class="block text-goldLight font-serif font-bold tracking-wider text-xs sm:text-base leading-none">СОБЕРИ СЕБЯ ЗАНОВО</span>
-            <span class="block text-[10px] text-emerald-100/75 mt-0.5">Книга-система М. и А. Воеводы</span>
+          <div class="min-w-0">
+            <span class="block text-goldLight font-serif font-bold tracking-wide sm:tracking-wider text-[11px] sm:text-base leading-none whitespace-nowrap">СОБЕРИ СЕБЯ ЗАНОВО</span>
+            <span class="block text-[9px] sm:text-[10px] text-emerald-100/75 mt-0.5 truncate">Книга-система М. и А. Воеводы</span>
           </div>
         </a>
 
@@ -223,14 +223,14 @@
         </div>
         
         <!-- Кнопка заказа + Кнопка мобильного меню (три полоски) -->
-        <div class="flex items-center gap-2 sm:gap-3">
-          <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-xs sm:text-sm px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg uppercase tracking-wide">
+        <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+          <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-[11px] sm:text-sm px-2.5 sm:px-5 py-2 sm:py-2.5 rounded-lg uppercase tracking-wide">
             Получить книгу
           </a>
           
           <!-- Кнопка «Гамбургер» для телефона -->
           <button id="mobile-menu-btn" class="md:hidden p-1.5 rounded-lg bg-emeraldDark/80 border border-emerald-700/60 text-goldLight hover:text-white transition">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
@@ -249,19 +249,19 @@
     </div>
   </nav>
 
- <!-- 1. ПЕРВЫЙ ЭКРАН (HERO) — ВЫВЕРЕННАЯ ВОРОНКА ПОД ТРАФИК С ДЗЕНА -->
+  <!-- 1. ПЕРВЫЙ ЭКРАН (HERO) — ВЫВЕРЕННАЯ ВОРОНКА ПОД ТРАФИК С ДЗЕНА -->
   <header class="bg-hero-radial text-white relative overflow-hidden border-b-4 border-gold">
     <div class="pointer-events-none absolute -top-24 right-1/4 w-96 h-96 rounded-full bg-gold/10 blur-3xl"></div>
 
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-12 sm:py-16 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-5 pb-12 sm:py-16 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
         <div class="lg:col-span-7 text-left">
           
-          <!-- Бейдж отвечает за формат и масштаб издания (без дубля слова "хирург") -->
-          <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-gold/15 border border-gold/40 text-goldLight text-[11px] sm:text-xs font-semibold mb-4">
+          <!-- Компактный бейдж формата и масштаба издания -->
+          <div class="inline-flex flex-wrap items-center gap-x-2 gap-y-0.5 px-3 py-1.5 sm:py-1 rounded-xl sm:rounded-full bg-gold/15 border border-gold/40 text-goldLight text-[11px] sm:text-xs font-semibold mb-3.5 sm:mb-4">
             <span>✦ Книга-практикум (PDF, 117 стр.)</span>
-            <span class="opacity-50">•</span>
+            <span class="hidden sm:inline opacity-50">•</span>
             <span>Более 30 приёмов с пошаговыми фото</span>
           </div>
 
@@ -631,7 +631,7 @@
           </div>
         </div>
 
-        <!-- Тайна №3 (ИСПРАВЛЕНА ОПЕЧАТКА: "во многом") -->
+        <!-- Тайна №3 -->
         <div class="mystery-card bg-white rounded-2xl p-6 border-2 border-slate-200/90 hover:border-gold shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
