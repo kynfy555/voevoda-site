@@ -135,13 +135,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
 
-  <!-- ========================================================================= -->
-  <!-- ВНИМАНИЕ: ДЛЯ МАКСИМАЛЬНОЙ СКОРОСТИ САЙТА БЕЗ "РЫВКОВ" ЗАГРУЗКИ         -->
-  <!-- 1. Сгенерируйте чистый CSS код на сайте play.tailwindcss.com            -->
-  <!-- 2. Удалите два скрипта <script> ниже                                    -->
-  <!-- 3. Вставьте сгенерированный CSS код внутрь тега <style> ниже            -->
-  <!-- ========================================================================= -->
-  
   <script src="https://cdn.tailwindcss.com"></script>
   
   <script>
@@ -169,8 +162,6 @@
   </script>
 
   <style>
-    /* Сюда нужно будет вставить сгенерированный CSS, когда удалите скрипты Tailwind выше */
-    
     .bg-hero-radial {
       background: radial-gradient(circle at 75% 30%, #355A4E 0%, #203E34 60%, #132A22 100%);
     }
@@ -237,7 +228,7 @@
             Получить книгу
           </a>
           
-          <!-- Кнопка «Гамбургер» для телефона-->
+          <!-- Кнопка «Гамбургер» для телефона -->
           <button id="mobile-menu-btn" class="md:hidden p-1.5 rounded-lg bg-emeraldDark/80 border border-emerald-700/60 text-goldLight hover:text-white transition">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -258,32 +249,64 @@
     </div>
   </nav>
 
-  <!-- 1. ПЕРВЫЙ ЭКРАН (HERO) -->
+  <!-- 1. ПЕРВЫЙ ЭКРАН (HERO) — ОПТИМИЗИРОВАН ПОД МОБИЛЬНЫЙ ТРАФИК С ДЗЕНА -->
   <header class="bg-hero-radial text-white relative overflow-hidden border-b-4 border-gold">
     <div class="pointer-events-none absolute -top-24 right-1/4 w-96 h-96 rounded-full bg-gold/10 blur-3xl"></div>
 
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-14 sm:py-16 relative z-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-12 sm:py-16 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
         <div class="lg:col-span-7 text-left">
           
-          <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/40 text-goldLight text-xs font-semibold mb-5">
+          <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-gold/15 border border-gold/40 text-goldLight text-[11px] sm:text-xs font-semibold mb-4">
             <span>✦ Книга-система</span>
             <span class="opacity-50">•</span>
-            <span>На стыке сосудистой хирургии, физиологии и восточных практик</span>
+            <span>Сосудистая хирургия, физиология и восточные практики</span>
           </div>
 
-          <h1 class="font-serif text-3xl sm:text-5xl font-bold leading-[1.14] text-white mb-4">
-            <span class="block text-base sm:text-xl text-goldLight/90 font-sans font-semibold mb-2">Авторская система сосудистого хирурга: как снять скрытые зажимы и вернуть природную энергию</span>
+          <h1 class="font-serif text-2xl sm:text-5xl font-bold leading-[1.15] text-white mb-3.5 sm:mb-4">
+            <span class="block text-sm sm:text-xl text-goldLight/95 font-sans font-semibold mb-1.5 sm:mb-2">Авторская система сосудистого хирурга, к.м.н. (30 лет практики):</span>
             Хватит жить на автопилоте.
-            <span class="block text-goldLight mt-1.5">Верните себе своё тело, ясный ум и вкус к жизни.</span>
+            <span class="block text-goldLight mt-1">Верните себе своё тело, ясный ум и природную энергию.</span>
           </h1>
 
-          <p class="text-sm sm:text-lg text-emerald-100/90 leading-relaxed mb-6">
-            <strong class="text-white font-semibold">Усталость и увядание — это не возраст. Это блокировка.</strong> Львиная доля ваших жизненных сил уходит на скрытую внутреннюю оборону и удержание хронического напряжения. Узнайте, как снять эту блокировку без изнуряющего спорта, жестких диет и горстей таблеток.
+          <p class="text-sm sm:text-lg text-emerald-100/90 leading-relaxed mb-5 sm:mb-6">
+            <strong class="text-white font-semibold">Усталость и увядание — это не возраст. Это блокировка.</strong> Львиная доля сил уходит на скрытое мышечное напряжение. Узнайте, как за 5–15 минут в день снять эту блокировку без изнуряющего спорта, диет и таблеток.
           </p>
 
-          <div class="space-y-3 mb-7">
+          <!-- БЫСТРЫЙ МОБИЛЬНЫЙ ШЛЮЗ (ОБЛОЖКА + ЦЕНА + КНОПКА СРАЗУ НА ПЕРВОМ ЭКРАНЕ ТЕЛЕФОНА) -->
+          <div class="lg:hidden bg-[#132A22]/75 border border-gold/40 rounded-2xl p-4 mb-6 shadow-xl">
+            <div class="flex items-center gap-4">
+              <div class="w-[105px] sm:w-[130px] shrink-0 relative">
+                <div class="absolute -inset-2 bg-gold/25 rounded-xl blur-md pointer-events-none"></div>
+                <img src="cover.webp" width="750" height="1060" fetchpriority="high" decoding="async"
+                     alt="Обложка книги «Собери себя заново»"
+                     class="relative z-10 w-full h-auto rounded-lg shadow-lg">
+              </div>
+              <div class="flex-1 min-w-0">
+                <span class="inline-block bg-gold/20 text-goldLight text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded mb-1">PDF-практикум • 117 стр.</span>
+                <p class="text-xs text-emerald-50/95 leading-snug mb-2">
+                  Пошаговые авторские фото к каждому упражнению. Мгновенный доступ навсегда.
+                </p>
+                <div class="flex items-baseline gap-2">
+                  <span class="text-goldLight font-extrabold text-2xl">970 ₽</span>
+                  <span class="text-emerald-200/50 line-through text-xs">1 490 ₽</span>
+                  <span class="text-[10px] text-emerald-200/75">(карты РФ / мир)</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="mt-3.5 w-full gold-gradient-btn font-extrabold text-sm py-3.5 px-5 rounded-xl uppercase tracking-wider inline-flex items-center justify-center gap-2">
+              <span>Получить книгу сейчас</span>
+              <span>→</span>
+            </a>
+            <p class="text-[11px] text-emerald-200/80 mt-2 text-center">
+              Мгновенная отправка на почту сразу после оплаты
+            </p>
+          </div>
+
+          <!-- 3 КЛЮЧЕВЫХ ТЕЗИСА СИСТЕМЫ -->
+          <div class="space-y-3 mb-6 sm:mb-7">
             <div class="bg-[#1A352B]/85 border border-emeraldAccent/80 rounded-xl p-3.5 flex items-start gap-3.5 shadow-sm">
               <span class="w-7 h-7 rounded-lg bg-gold/20 border border-gold/40 text-goldLight font-serif font-bold text-sm flex items-center justify-center shrink-0 mt-0.5">I</span>
               <p class="text-xs sm:text-sm text-emerald-50 leading-relaxed">
@@ -306,31 +329,37 @@
             </div>
           </div>
 
-          <div class="bg-[#132A22]/70 border-l-4 border-gold p-3.5 sm:p-4 rounded-r-xl mb-7 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
+          <div class="bg-[#132A22]/70 border-l-4 border-gold p-3.5 sm:p-4 rounded-r-xl mb-0 lg:mb-7 text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
             <p><strong class="text-goldLight">Михаил Воевода</strong> — к.м.н., доцент кафедры хирургии, сосудистый хирург (30 лет у операционного стола), прямой ученик Гранд Мастера кунг-фу Ли Хонг Тая.</p>
             <p class="mt-1"><strong class="text-goldLight">Андрей Воевода</strong> — соавтор системы, исследователь нейробиологии привычек, дыхательных практик и системного восстановления организма.</p>
           </div>
 
-          <div class="hidden lg:inline-flex flex-col items-center">
-            <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="w-full gold-gradient-btn font-extrabold text-base px-9 py-4 rounded-xl uppercase tracking-wider inline-flex items-center justify-center gap-3">
+          <!-- ДЕСКТОП CTA С ЦЕНОЙ -->
+          <div class="hidden lg:inline-flex flex-col items-start">
+            <div class="flex items-baseline gap-3 mb-2.5">
+              <span class="text-goldLight font-extrabold text-3xl">970 ₽</span>
+              <span class="text-emerald-200/50 line-through text-base">1 490 ₽</span>
+              <span class="bg-gold/20 border border-gold/40 text-goldLight text-xs font-semibold px-2.5 py-0.5 rounded">Спеццена для читателей</span>
+            </div>
+            <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-base px-9 py-4 rounded-xl uppercase tracking-wider inline-flex items-center justify-center gap-3">
               <span>Получить книгу сейчас</span>
               <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
               </svg>
             </a>
-            <p class="text-xs text-emerald-200/85 mt-2 text-center whitespace-nowrap">
-              PDF-формат (117 стр.) • Мгновенный доступ после оплаты
+            <p class="text-xs text-emerald-200/85 mt-2 whitespace-nowrap">
+              PDF-формат (117 стр. с фото) • Мгновенный доступ после оплаты
             </p>
           </div>
         </div>
 
-        <div class="lg:col-span-5 flex flex-col items-center">
-          <div class="w-full max-w-[340px] sm:max-w-[375px]">
+        <!-- ПРАВАЯ КОЛОНКА (ТОЛЬКО ДЛЯ ДЕСКТОПА, НА МОБИЛЬНОМ ОБЛОЖКА УЖЕ ПОКАЗАНА ВЫШЕ) -->
+        <div class="hidden lg:flex lg:col-span-5 flex-col items-center">
+          <div class="w-full max-w-[375px]">
             
             <div class="relative">
               <div class="absolute -inset-4 bg-gradient-to-tr from-white/15 via-gold/30 to-white/15 rounded-3xl blur-2xl opacity-90 pointer-events-none"></div>
               <div class="relative">
-                <!-- Оптимизированное и безопасное отображение обложки -->
                 <img id="userCoverImg" src="cover.webp" width="750" height="1060" fetchpriority="high" decoding="async"
                      alt="Обложка книги «Собери себя заново», авторы Михаил и Андрей Воевода"
                      style="opacity:0; transition:opacity .4s ease, transform .5s ease;"
@@ -341,24 +370,14 @@
             </div>
 
             <div class="mt-4 space-y-2.5 text-left">
-              <div class="bg-white/95 text-emeraldDeep px-4 py-3 rounded-xl border-l-4 border-gold shadow-md flex items-center gap-3 text-xs sm:text-sm">
+              <div class="bg-white/95 text-emeraldDeep px-4 py-3 rounded-xl border-l-4 border-gold shadow-md flex items-center gap-3 text-sm">
                 <span class="text-goldDark font-bold text-base shrink-0">✦</span>
                 <span class="font-semibold italic">«Собрать себя заново — значит вспомнить того, кем вы были до того, как потеряли связь с собой»</span>
               </div>
-              <div class="bg-[#224438]/95 text-emerald-50 px-4 py-3 rounded-xl border border-gold/40 shadow-md flex items-center gap-3 text-xs sm:text-sm">
+              <div class="bg-[#224438]/95 text-emerald-50 px-4 py-3 rounded-xl border border-gold/40 shadow-md flex items-center gap-3 text-sm">
                 <span class="text-goldLight font-bold shrink-0">✔</span>
                 <span><strong>30 лет врачебного опыта</strong> и 12 лет личной практики авторов</span>
               </div>
-            </div>
-
-            <div class="mt-5 lg:hidden text-center flex flex-col items-center">
-              <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="w-full gold-gradient-btn font-extrabold text-base py-4 px-6 rounded-xl uppercase tracking-wider inline-flex items-center justify-center gap-2">
-                <span>Получить книгу сейчас</span>
-                <span>→</span>
-              </a>
-              <p class="text-[11px] text-emerald-200/85 mt-2 text-center whitespace-nowrap">
-                PDF-формат (117 стр.) • Мгновенный доступ
-              </p>
             </div>
 
           </div>
@@ -609,7 +628,7 @@
           </div>
         </div>
 
-        <!-- Тайна №3 -->
+        <!-- Тайна №3 (ИСПРАВЛЕНА ОПЕЧАТКА: "во многом") -->
         <div class="mystery-card bg-white rounded-2xl p-6 border-2 border-slate-200/90 hover:border-gold shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
@@ -620,7 +639,7 @@
               Единая соединительнотканная сеть внутри вашего тела
             </h3>
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-              То, что восточные мастера веками описывали как «меридианы», во multiм перекликается с современной анатомией миофасциальных цепей. От гиподинамии и стресса фасции теряют эластичность и скольжение, буквально стягивая тело, словно тесный скафандр.
+              То, что восточные мастера веками описывали как «меридианы», во многом перекликается с современной анатомией миофасциальных цепей. От гиподинамии и стресса фасции теряют эластичность и скольжение, буквально стягивая тело, словно тесный скафандр.
             </p>
           </div>
           <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] font-semibold text-goldDark flex items-center gap-1.5">
@@ -1037,7 +1056,6 @@
           <p><strong>2. Порядок покупки и оплаты:</strong> Приём платежей и автоматическая цифровая доставка осуществляются через партнёрскую международную платформу Lava.top. Ссылка на скачивание направляется Покупателю автоматически на указанный при оплате адрес электронной почты.</p>
           <p class="pt-2 border-t border-emeraldCard">
             <strong>Реквизиты продавца:</strong><br>
-          
             Электронная почта для связи: voevoda.book@gmail.com
           </p>
         </div>
@@ -1082,7 +1100,7 @@
   <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#132A22]/95 backdrop-blur-md border-t border-gold/40 px-4 py-2.5 flex items-center justify-between gap-3 shadow-2xl">
     <div class="text-white leading-tight">
       <span class="block text-xs font-serif font-bold text-goldLight">СОБЕРИ СЕБЯ ЗАНОВО</span>
-      <span class="text-[11px] text-emerald-100/80">Книга-система • PDF</span>
+      <span class="text-[11px] text-emerald-100/90">PDF (117 стр.) • <strong class="text-goldLight">970 ₽</strong></span>
     </div>
     <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3" target="_blank" rel="noopener" class="gold-gradient-btn font-extrabold text-xs px-5 py-2.5 rounded-lg uppercase tracking-wide shrink-0">
       Получить книгу →
