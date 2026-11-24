@@ -455,7 +455,7 @@
         </div>
       </div>
 
-      <!-- СПОКОЙНАЯ САМОПРОВЕРКА СОСТОЯНИЯ -->
+      <!-- КЛИНИЧЕСКАЯ ВЗАИМОСВЯЗЬ -->
       <div class="bg-ivory rounded-3xl p-5 sm:p-7 border border-gold/40 shadow-sm">
         <div class="text-center max-w-2xl mx-auto mb-5">
           <span class="text-[11px] font-bold uppercase tracking-wider text-goldDark">Клиническая взаимосвязь</span>
@@ -463,87 +463,52 @@
             Четыре проявления, которые редко приходят поодиночке
           </h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-1">
-            Отметьте состояния, которые вы замечали у себя за последний месяц — чаще всего это звенья одной цепи:
+            По отдельности их часто списывают на возраст, погоду или недосып — но на практике это нередко звенья одной цепи:
           </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
-          <label class="cursor-pointer bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/90 hover:border-gold transition flex items-start gap-3 select-none">
-            <input type="checkbox" onchange="updateSelfCheck()" class="self-check-box mt-1 w-4 h-4 rounded accent-[#1A352B] shrink-0 cursor-pointer">
-            <span class="text-slate-700 leading-relaxed">
+          <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/80 flex items-start gap-2.5">
+            <span class="text-goldDark font-bold mt-0.5 shrink-0">•</span>
+            <p class="text-slate-700 leading-relaxed">
               <strong class="text-emeraldDeep block mb-0.5">Утренняя скованность и «тяжёлая голова»</strong>
-              Первые 20–30 минут после пробуждения тело кажется негибким, а голова — тяжёлой: так сказываются ночной венозно-лимфатический застой и напряжение мышц шеи.
-            </span>
-          </label>
-
-          <label class="cursor-pointer bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/90 hover:border-gold transition flex items-start gap-3 select-none">
-            <input type="checkbox" onchange="updateSelfCheck()" class="self-check-box mt-1 w-4 h-4 rounded accent-[#1A352B] shrink-0 cursor-pointer">
-            <span class="text-slate-700 leading-relaxed">
-              <strong class="text-emeraldDeep block mb-0.5">Напряжённые плечи, челюсть и поверхностное дыхание</strong>
-              За работой или в мыслях плечи непроизвольно поднимаются, а дыхание становится неглубоким: привычная защитная реакция на фоновый стресс.
-            </span>
-          </label>
-
-          <label class="cursor-pointer bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/90 hover:border-gold transition flex items-start gap-3 select-none">
-            <input type="checkbox" onchange="updateSelfCheck()" class="self-check-box mt-1 w-4 h-4 rounded accent-[#1A352B] shrink-0 cursor-pointer">
-            <span class="text-slate-700 leading-relaxed">
-              <strong class="text-emeraldDeep block mb-0.5">Резкий спад сил и сонливость после обеда</strong>
-              После обычной еды наваливается тяжесть и падает концентрация: сказываются перегрузка пищеварения и спазм желчевыводящих путей на фоне напряжения.
-            </span>
-          </label>
-
-          <label class="cursor-pointer bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/90 hover:border-gold transition flex items-start gap-3 select-none">
-            <input type="checkbox" onchange="updateSelfCheck()" class="self-check-box mt-1 w-4 h-4 rounded accent-[#1A352B] shrink-0 cursor-pointer">
-            <span class="text-slate-700 leading-relaxed">
-              <strong class="text-emeraldDeep block mb-0.5">Навязчивые мысли перед сном и поверхностный отдых</strong>
-              Тело устало, но внутренний диалог не затихает: нервная система не может вовремя переключиться в режим ночного восстановления.
-            </span>
-          </label>
-        </div>
-
-        <!-- НИЖНЯЯ ПОЛОСА САМОПРОВЕРКИ + ПЕРЕХОД К ХИРУРГУ ИЛИ КНИГЕ -->
-        <div class="mt-5 bg-[#1A352B] text-white rounded-2xl p-4 sm:p-5 border border-gold/40 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div class="text-center md:text-left">
-            <span class="block text-[10px] font-bold uppercase tracking-widest text-goldLight mb-1">Оценка взаимосвязи</span>
-            <p id="selfCheckResult" class="text-xs sm:text-sm text-emerald-50 leading-relaxed">
-              По отдельности эти признаки часто списывают на возраст, погоду или недосып. Отметьте знакомые пункты выше — ниже сосудистый хирург разбирает их общую причину.
+              Первые 20–30 минут после пробуждения тело кажется негибким, а мысли — вязкими: так часто проявляются ночной венозно-лимфатический застой и нерасслабленные мышцы шеи.
             </p>
           </div>
-          <div class="flex flex-wrap items-center justify-center gap-2.5 shrink-0">
-            <a href="#surgeon" class="px-4 py-2.5 rounded-xl border border-gold/60 text-goldLight hover:bg-gold/15 text-xs sm:text-sm font-semibold transition whitespace-nowrap">
-              Позиция хирурга ↓
-            </a>
-            <a href="https://app.lava.top/products/e9509a53-07b3-4349-a47b-a4ca6c4b54a3?utm_source=avoevoda&utm_medium=landing_main&utm_campaign=paradox_btn"
-               target="_blank" rel="noopener"
-               onclick="reachGoalSafe('goal_paradox')"
-               class="gold-gradient-btn font-extrabold text-xs sm:text-sm px-5 py-2.5 rounded-xl uppercase tracking-wide whitespace-nowrap">
-              Получить книгу →
-            </a>
+
+          <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/80 flex items-start gap-2.5">
+            <span class="text-goldDark font-bold mt-0.5 shrink-0">•</span>
+            <p class="text-slate-700 leading-relaxed">
+              <strong class="text-emeraldDeep block mb-0.5">Поднятые плечи, сжатая челюсть и поверхностное дыхание</strong>
+              За работой или в мыслях плечи непроизвольно ползут вверх, а дыхание становится неглубоким — привычная защитная реакция нервной системы на фоновый стресс.
+            </p>
+          </div>
+
+          <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/80 flex items-start gap-2.5">
+            <span class="text-goldDark font-bold mt-0.5 shrink-0">•</span>
+            <p class="text-slate-700 leading-relaxed">
+              <strong class="text-emeraldDeep block mb-0.5">Тяжесть и резкий спад сил после обеда</strong>
+              После обычной еды клонит в сон и падает концентрация: на фоне внутреннего напряжения страдает пищеварение, замедляется моторика ЖКТ и усиливаются перепады дневного тонуса.
+            </p>
+          </div>
+
+          <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-slate-200/80 flex items-start gap-2.5">
+            <span class="text-goldDark font-bold mt-0.5 shrink-0">•</span>
+            <p class="text-slate-700 leading-relaxed">
+              <strong class="text-emeraldDeep block mb-0.5">Навязчивые мысли перед сном и поверхностный отдых</strong>
+              Тело устало, но внутренний диалог не затихает — вегетативная нервная система не может вовремя переключиться в режим ночного восстановления.
+            </p>
           </div>
         </div>
+
+        <p class="text-center text-xs sm:text-sm text-emeraldDeep font-medium mt-4 pt-3.5 border-t border-slate-200/70">
+          В книге мы показываем, как работать не с каждым из этих признаков по отдельности, а с их общей физиологической основой.
+        </p>
       </div>
-
-    </div>
-
-    <script>
-      function updateSelfCheck() {
-        const checked = document.querySelectorAll('.self-check-box:checked').length;
-        const resultEl = document.getElementById('selfCheckResult');
-        if (!resultEl) return;
-
-        if (checked === 0) {
-          resultEl.textContent = 'По отдельности эти признаки часто списывают на возраст, погоду или недосып. Отметьте знакомые пункты выше — ниже сосудистый хирург разбирает их общую причину.';
-        } else if (checked === 1) {
-          resultEl.innerHTML = '<strong class="text-goldLight">Отмечен 1 из 4 признаков.</strong> Даже один устойчивый сигнал указывает на фоновую перегрузку — ниже сосудистый хирург объясняет, как работать с её первопричиной.';
-        } else if (checked === 2) {
-          resultEl.innerHTML = '<strong class="text-goldLight">Отмечено 2 из 4 признаков.</strong> Эти состояния усиливают друг друга по кругу — в книге мы разбираем, как мягко разорвать эту цепь в единой системе.';
-        } else {
-          resultEl.innerHTML = '<strong class="text-goldLight">Отмечено ' + checked + ' из 4 признаков.</strong> Организм давно работает в режиме скрытого перенапряжения — ниже сосудистый хирург объясняет, с чего безопасно начать восстановление.';
-        }
-      }
-    </script>
+</div>
   </section>
-
+      
+        
   <!-- 3. ИСПОВЕДЬ У ОПЕРАЦИОННОГО СТОЛА + ЖИВОЕ ФОТО АВТОРОВ -->
   <section id="surgeon" class="py-14 sm:py-20 bg-forest-deep text-white border-b-4 border-gold relative overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
