@@ -899,77 +899,84 @@
   </div>
 </section>
 
-  <!-- 6. ИНТЕРАКТИВНЫЙ ПЕРЕКЛЮЧАТЕЛЬ «ДВА СЦЕНАРИЯ ВАШЕГО ДНЯ» (УТРО, ОБЕД, ВЕЧЕР) -->
-  <section id="scenarios" class="py-14 sm:py-20 bg-ivory border-b border-slate-200">
+  <!-- 6. ИНТЕРАКТИВНЫЙ ПЕРЕКЛЮЧАТЕЛЬ «ДВА СЦЕНАРИЯ ОДНОГО ДНЯ» -->
+  <section id="scenarios" class="py-14 sm:py-20 bg-ivory border-t border-b border-slate-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       
       <div class="text-center max-w-3xl mx-auto mb-8">
-        <span class="text-xs font-bold uppercase tracking-widest text-emeraldAccent bg-white px-3.5 py-1 rounded-full shadow-sm">ТРАНСФОРМАЦИЯ СОСТОЯНИЯ • ОТ 10–15 МИНУТ В ДЕНЬ</span>
-        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-emeraldDeep mt-3">
-          Жизнь на пределе или жизнь в ресурсе: как меняются ваши будни, когда уходит фоновое напряжение
+        <span class="text-xs font-bold uppercase tracking-widest text-emeraldAccent bg-white px-3.5 py-1 rounded-full shadow-sm border border-slate-200/80">
+          Как это встраивается в обычный день
+        </span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-emeraldDeep mt-3 leading-tight">
+          Два сценария одного дня: 15–20 минут практики против скрытой усталости
         </h2>
-        <p class="text-slate-600 text-xs sm:text-base mt-2">
-          Система встраивается в обычный день постепенно: начинайте с 10–15 минут утренней гимнастики и дыхания, мягко доводя полный комплекс до 45 минут. Переключите вкладки ниже:
+        <p class="text-slate-600 text-xs sm:text-base mt-2.5 leading-relaxed">
+          Книга не требует менять график работы или идти в спортзал — практики распределены по коротким точкам дня.
         </p>
       </div>
 
+      <!-- Переключатель вкладок (по умолчанию активна вкладка «С системой книги») -->
       <div class="flex justify-center mb-8">
-        <div class="inline-flex bg-white p-1.5 rounded-2xl border border-slate-200 shadow-sm">
-          <button id="btnScenarioA" type="button" onclick="switchScenario('A')" class="px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-red-900 text-white shadow">
-            ✕ День «на автопилоте» (Без системы)
+        <div class="inline-flex flex-wrap sm:flex-nowrap justify-center bg-white p-1.5 rounded-2xl border border-slate-200 shadow-sm gap-1 sm:gap-0">
+          <button id="btnScenarioB" type="button" onclick="switchScenario('B')" class="px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition bg-[#132A22] text-goldLight shadow">
+            ✔ День с системой книги
           </button>
-          <button id="btnScenarioB" type="button" onclick="switchScenario('B')" class="px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-emeraldDeep hover:bg-emerald-50">
-            ✔ День в ресурсе (С системой книги)
+          <button id="btnScenarioA" type="button" onclick="switchScenario('A')" class="px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition text-slate-600 hover:bg-slate-100">
+            ✕ День без системы (На износе)
           </button>
         </div>
       </div>
 
-      <!-- Панель Сценария А -->
-      <div id="panelScenarioA" class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-red-400 shadow-sm">
-          <span class="text-[11px] font-bold uppercase text-red-700">07:30 • Тяжёлое утро</span>
-          <h3 class="font-serif text-lg font-bold text-slate-900 mt-1">Резкий подъём и скованность</h3>
+      <!-- Панель Сценария Б (открыта по умолчанию) -->
+      <div id="panelScenarioB" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-emerald-500 shadow-sm">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Утро • 10–15 минут</span>
+          <h3 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Плавный запуск без кофе</h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Подъём с тяжёлой головой и зажатой шеей, быстрый скроллинг новостей ещё в постели и попытка разогнать утреннюю вялость крепким кофе.
+            Короткая гимнастика пробуждения прямо в постели и мягкая разминка шеи и суставов: запускаем венозно-лимфатический отток до того, как день наберёт обороты.
           </p>
         </div>
-        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-red-400 shadow-sm">
-          <span class="text-[11px] font-bold uppercase text-red-700">13:30 • Послеобеденный спад</span>
-          <h3 class="font-serif text-lg font-bold text-slate-900 mt-1">Еда на ходу и «туман»</h3>
+
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-emerald-500 shadow-sm">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Обед • 2–3 минуты</span>
+          <h3 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Порядок блюд и пауза</h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Обед в спешке за экраном на фоне фонового напряжения: после еды клонит в сон, снижается концентрация, а вторая половина дня идёт через усилие.
+            Соблюдаете простое правило тарелки без диет и делаете короткий дыхательный цикл — чтобы после еды сохранить ясную голову до самого вечера.
           </p>
         </div>
-        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-red-400 shadow-sm">
-          <span class="text-[11px] font-bold uppercase text-red-700">22:30 • Вечер и сон</span>
-          <h3 class="font-serif text-lg font-bold text-slate-900 mt-1">Усталость есть, покоя нет</h3>
+
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-emerald-500 shadow-sm">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Вечер • 5 минут</span>
+          <h3 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Переключение нервной системы</h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Тело вымотано, но мысли продолжают крутиться по кругу, мышцы не отпускают до конца, и сон не приносит полноценного восстановления.
+            Короткий протокол снятия напряжения с мышц лица и челюсти: переводите организм из режима дневных задач в глубокий восстановительный сон.
           </p>
         </div>
       </div>
 
-      <!-- Панель Сценария Б -->
-      <div id="panelScenarioB" class="grid grid-cols-1 md:grid-cols-3 gap-4 hidden">
-        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-emerald-500 shadow-sm">
-          <span class="text-[11px] font-bold uppercase text-emerald-700">07:30 • Мягкое пробуждение</span>
-          <h3 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Лёгкое тело и ясная голова</h3>
+      <!-- Панель Сценария А (скрыта по умолчанию, открывается по клику) -->
+      <div id="panelScenarioA" class="grid grid-cols-1 md:grid-cols-3 gap-4 hidden">
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-red-400 shadow-sm">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-red-700">Утро</span>
+          <h3 class="font-serif text-lg font-bold text-slate-900 mt-1">Долг у организма</h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Спокойный переход из сна в бодрствование через мягкую утреннюю биомеханику и бережную активацию кровообращения — без лишних стимуляторов.
+            Резкий подъём, лента новостей в телефоне и крепкий кофе натощак: сосуды с самого утра работают в режиме стрессовой стимуляции.
           </p>
         </div>
-        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-emerald-500 shadow-sm">
-          <span class="text-[11px] font-bold uppercase text-emerald-700">13:30 • Ровная бодрость</span>
-          <h3 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Устойчивая концентрация</h3>
+
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-red-400 shadow-sm">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-red-700">Обед</span>
+          <h3 class="font-serif text-lg font-bold text-slate-900 mt-1">Перегрузка пищеварения</h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Продуманный порядок блюд, спокойный ритм и короткая дыхательная перезагрузка помогают сохранить ясный ум и ровные силы до вечера.
+            Перекус в спешке перед экраном: кровь и силы уходят на тяжёлое переваривание, вторая половина дня держится на сладком и усилии воли.
           </p>
         </div>
-        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-emerald-500 shadow-sm">
-          <span class="text-[11px] font-bold uppercase text-emerald-700">22:30 • Вечерний сброс</span>
-          <h3 class="font-serif text-lg font-bold text-emeraldDeep mt-1">Спокойный переход ко сну</h3>
+
+        <div class="bg-white p-5 sm:p-6 rounded-2xl border-l-4 border-red-400 shadow-sm">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-red-700">Вечер</span>
+          <h3 class="font-serif text-lg font-bold text-slate-900 mt-1">Незавершённый день</h3>
           <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-            Короткие вечерние приёмы переключения внимания и расслабления помогают отпустить дневное напряжение и настроиться на глубокий сон.
+            Организм устал, но повышенный тонус мышц и поток мыслей не дают нервной системе перейти в фазу полноценного ночного обновления.
           </p>
         </div>
       </div>
