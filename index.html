@@ -745,7 +745,7 @@
     </div>
   </section>
 
-  <!-- ==================== СЕКЦИЯ 5: ПРЕДПРОСМОТР ИЗДАНИЯ (ОГЛАВЛЕНИЕ И НАГЛЯДНЫЕ МАТЕРИАЛЫ) ==================== -->
+  <!-- ==================== СЕКЦИЯ 5: ПРЕДПРОСМОТР ИЗДАНИЯ (ОГЛАВЛЕНИЕ И СХЕМА) ==================== -->
 <section id="inside-book" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
   <div class="max-w-6xl mx-auto">
 
@@ -782,7 +782,7 @@
           </h3>
 
           <div class="divide-y divide-slate-100">
-            <!-- Пункт 0 -->
+            <!-- Вступление -->
             <div class="py-3.5 first:pt-0">
               <div class="flex items-baseline justify-between gap-4">
                 <h4 class="font-bold text-emeraldDeep text-sm sm:text-[15px]">
@@ -853,53 +853,41 @@
         </div>
       </div>
 
-      <!-- ПРАВАЯ КАРТОЧКА: Схемы и фото -->
+      <!-- ПРАВАЯ КАРТОЧКА: Вшитая схема физиологии + резюме практикума -->
       <div class="bg-emeraldDeep text-white rounded-3xl p-6 sm:p-8 shadow-lg flex flex-col justify-between">
         <div>
           <span class="inline-block text-[11px] font-extrabold uppercase tracking-wider text-gold mb-3">
-            Наглядные разборы и фотопротоколы
+            Наглядные разборы и протоколы
           </span>
 
           <h3 class="font-serif text-2xl sm:text-[26px] font-bold text-white leading-snug mb-3">
-            Схемы физиологии и&nbsp;пошаговые фото упражнений
+            Схемы физиологии и&nbsp;пошаговые инструкции
           </h3>
 
           <p class="text-emerald-100/85 text-xs sm:text-sm leading-relaxed mb-6">
-            В практической части каждая техника сопровождается разбором физиологического эффекта (как на схеме со стр. 30) и точными фото постановки корпуса и рук:
+            В практической части каждая техника сопровождается разбором физиологического эффекта (как на схеме со стр. 30) и&nbsp;подробным описанием постановки корпуса и&nbsp;рук:
           </p>
 
-          <!-- Иллюстрация 1: Схема со стр. 30 -->
-          <div class="bg-white rounded-2xl p-2 sm:p-3 shadow-md mb-5">
-            <!-- ЗАМЕНИТЕ src НА ВАШ ПУТЬ К ФАЙЛУ СХЕМЫ СО СТР. 30 -->
+          <!-- Иллюстрация: Вшитая схема со стр. 30 -->
+          <div class="bg-white rounded-2xl p-2.5 sm:p-3.5 shadow-md mb-6">
+            <!-- ВСТАВЬТЕ В src ВАШ ТЕКУЩИЙ ВШИТЫЙ КОД КАРТИНКИ (data:image/...) ИЗ СТАРОГО ФАЙЛА -->
             <img
-              src="YOUR_SCHEMA_IMAGE.webp"
+              src="ВСТАВЬТЕ_СЮДА_ВАШ_DATA_IMAGE_СХЕМЫ"
               alt="Схема физиологической цепочки стресса и мышечного зажима из книги «Собери себя заново»"
-              loading="lazy"
               class="w-full h-auto rounded-xl object-contain"
             />
           </div>
         </div>
 
-        <!-- Нижний блок: Фото упражнения + подпись -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 flex flex-col sm:flex-row items-center gap-4">
-          <div class="w-full sm:w-32 h-36 sm:h-28 shrink-0 overflow-hidden rounded-xl border border-gold/30 bg-emerald-950/50">
-            <!-- ЗАМЕНИТЕ src НА ВАШ ПУТЬ К ФОТО УПРАЖНЕНИЯ (лучше обрезанное по пояс) -->
-            <img
-              src="YOUR_PRACTICE_PHOTO.webp"
-              alt="Пример пошаговой фотоинструкции постановки корпуса, шеи и рук из книги"
-              loading="lazy"
-              class="w-full h-full object-cover object-top"
-            />
-          </div>
-
-          <div class="text-left">
-            <p class="text-xs sm:text-sm font-bold text-gold mb-1.5">
-              Более 30 практик и свыше 80 пошаговых фото:
-            </p>
-            <p class="text-xs sm:text-[13px] text-emerald-100/85 leading-relaxed">
-              Точная фиксация корпуса, шеи, осанки и положения кистей — чтобы вы выполняли комплекс безопасно и без догадок.
-            </p>
-          </div>
+        <!-- Нижняя плашка (без второго фото) -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-4 sm:p-5">
+          <p class="text-xs sm:text-sm font-bold text-gold mb-1.5 flex items-center gap-2">
+            <span>✦</span>
+            <span>Более 30 практик и свыше 80 пошаговых фото внутри книги</span>
+          </p>
+          <p class="text-xs sm:text-[13px] text-emerald-100/85 leading-relaxed">
+            В практической главе каждый приём проиллюстрирован серией кадров с&nbsp;точной фиксацией осанки, шеи и&nbsp;положения кистей — чтобы вы выполняли комплекс безопасно и&nbsp;без догадок.
+          </p>
         </div>
       </div>
 
