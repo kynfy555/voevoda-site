@@ -18,6 +18,12 @@
     <lastmod>2026-11-28</lastmod>
     <priority>0.9</priority>
   </url>
+  <!-- Интерактивная самодиагностика скрытых зажимов -->
+  <url>
+    <loc>https://avoevoda.com/test.html</loc>
+    <lastmod>2026-11-28</lastmod>
+    <priority>0.8</priority>
+  </url>
   <!-- Раздел со статьями (Витрина) -->
   <url>
     <loc>https://avoevoda.com/stati.html</loc>
